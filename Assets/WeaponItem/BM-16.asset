@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b215ac530a06e5b42b5344771a5d6c2e, type: 3}
+  m_Name: BM-16
+  m_EditorClassIdentifier: 
+  name: "\u0411\u041C-16"
+  id: 79
+  isGraficStore: 0
+  img: {fileID: 1998142630, guid: 0899ab58b81ff7c46887a1054d8d66e4, type: 3}
+  imgStore: {fileID: -1867294561027397158, guid: c9dd634d3ec289c478f32d7585a0b4db, type: 3}
+  pointOfGraficStore: {x: 0, y: 0}
+  typeAnim: 2
+  imgReload: {fileID: 0}
+  soundShoot: {fileID: 8300000, guid: 2d131b5687eb3b94c956e4baee95360e, type: 3}
+  soundSpusk: {fileID: 8300000, guid: c219305d33f8b5749ac4d0701d47f7b0, type: 3}
+  typeAmmo: 1
+  animationReload: 
+  dm: 64
+  ammo: 2
+  verticalRecoil: 9
+  verticalRecoilSit: 6
+  startTimeBtwShot: 0.4
+  currentAmmos: 0

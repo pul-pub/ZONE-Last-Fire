@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1050296007910",
+    "project_id": "rlc-last-fire",
+    "storage_bucket": "rlc-last-fire.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050296007910:android:e649d9929d8d582d92cf27",
+        "android_client_info": {
+          "package_name": "com.HamstronGames.RLCLastFire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDckOOtxtDrrkkDCX_kf4kJD0_5axDcJvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

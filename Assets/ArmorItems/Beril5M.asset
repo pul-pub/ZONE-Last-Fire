@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed8572ecb8d47547b41121b08333390, type: 3}
+  m_Name: Beril5M
+  m_EditorClassIdentifier: 
+  id: 91
+  bulletResistance: 56
+  tearProtection: 20
+  spriteBody: {fileID: 7183617622495930205, guid: 7927c1fc82538b04cab34f0ecb225da3, type: 3}
+  spriteHead: {fileID: -266258118167831906, guid: 7927c1fc82538b04cab34f0ecb225da3, type: 3}
+  spriteRig: {fileID: -9203634307534027173, guid: 7927c1fc82538b04cab34f0ecb225da3, type: 3}
+  offset: {x: 0, y: 0}

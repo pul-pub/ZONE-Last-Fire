@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac79b91691f63204dadec9688683302c, type: 3}
+  m_Name: PDA-Gluba
+  m_EditorClassIdentifier: 
+  id: 22
+  Name: "\u041F\u0414\u0410"
+  money: 0
+  maxCount: 1
+  info: "\u041A\u041F\u041A \u0413\u043B\u044B\u0431\u044B"
+  type: 8
+  typeAmmo: 5
+  typeMediac: 4
+  imgBG: {fileID: -3537681012406513342, guid: 80b47b4136019bb46be17b55f90d0f53, type: 3}
+  imgSelected: {fileID: -5744074223219942898, guid: a877d020e76f0b743b1a9c664eb0fc30, type: 3}
+  img: {fileID: 1056672188, guid: 567c299527b93d74a8c16492352e1a4e, type: 3}
+  img_50: {fileID: 1056672188, guid: 567c299527b93d74a8c16492352e1a4e, type: 3}

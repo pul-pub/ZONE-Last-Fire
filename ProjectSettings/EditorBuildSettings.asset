@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: ad2b3eb9c8ebc924ab84886935dfe378
+  - enabled: 1
+    path: Assets/Scenes/Chernobl7.unity
+    guid: 6035898dd486a974085cea7ff48f76bc
+  - enabled: 1
+    path: Assets/Scenes/Chernobl7-Bar.unity
+    guid: cbe1c8b829075c847a889156c853317e
+  - enabled: 1
+    path: Assets/Scenes/NewTirretor.unity
+    guid: c6b930b6c0b462e4ca0ad83d3324ec37
+  - enabled: 1
+    path: Assets/Scenes/Kordon.unity
+    guid: 95bb40330b41d2c478281c113c61203a
+  - enabled: 1
+    path: Assets/Scenes/Poliana.unity
+    guid: 3dd08cf57d895384cb696fb1c6d348a5
+  - enabled: 1
+    path: Assets/Scenes/ATP.unity
+    guid: 18ce4756527303a4ab2bd36841baf7fa
+  - enabled: 1
+    path: Assets/Scenes/StStalker.unity
+    guid: 83de3f700fa49d1479d6536d28b6632f
+  - enabled: 1
+    path: Assets/Scenes/In_NII.unity
+    guid: ef69113b2ea28b44685541e764bc4a3d
+  - enabled: 1
+    path: Assets/Scenes/LERN.unity
+    guid: 6115da59a3f134b4db14038f1b72c56d
+  m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

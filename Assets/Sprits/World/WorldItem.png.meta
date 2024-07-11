@@ -1,0 +1,1113 @@
+fileFormatVersion: 2
+guid: aee5ae20cf0aa04438291e25b3fca4fa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2871323204851569692
+    second: WorldItem_0
+  - first:
+      213: -2459114840113890878
+    second: WorldItem_1
+  - first:
+      213: 2576039365898362249
+    second: WorldItem_2
+  - first:
+      213: 6858696158384077989
+    second: WorldItem_3
+  - first:
+      213: 2134838135027643870
+    second: WorldItem_4
+  - first:
+      213: 221637526034995154
+    second: WorldItem_5
+  - first:
+      213: 4951107866666036121
+    second: WorldItem_6
+  - first:
+      213: 208554429581926306
+    second: WorldItem_7
+  - first:
+      213: 6991692491033968172
+    second: WorldItem_8
+  - first:
+      213: -4338223717534617583
+    second: WorldItem_9
+  - first:
+      213: -2161234030154594473
+    second: WorldItem_10
+  - first:
+      213: -4176243689064416445
+    second: WorldItem_11
+  - first:
+      213: 10555170568386984
+    second: WorldItem_12
+  - first:
+      213: -5631062192698778040
+    second: WorldItem_13
+  - first:
+      213: 6695176651740281108
+    second: WorldItem_14
+  - first:
+      213: -1605283057224389026
+    second: WorldItem_15
+  - first:
+      213: -8830014546008337601
+    second: WorldItem_16
+  - first:
+      213: -20892835487187941
+    second: WorldItem_17
+  - first:
+      213: -8172892292564701591
+    second: WorldItem_18
+  - first:
+      213: 2890465582006743038
+    second: WorldItem_19
+  - first:
+      213: -4860650604006625873
+    second: WorldItem_20
+  - first:
+      213: -1199175072306366300
+    second: WorldItem_21
+  - first:
+      213: -6910353569268734720
+    second: WorldItem_22
+  - first:
+      213: -8720349726886728127
+    second: WorldItem_23
+  - first:
+      213: 1329310768866573013
+    second: WorldItem_24
+  - first:
+      213: -3984972758090041629
+    second: WorldItem_25
+  - first:
+      213: -5654117863630839228
+    second: WorldItem_26
+  - first:
+      213: -6305576675934766499
+    second: WorldItem_27
+  - first:
+      213: 5293326838854998489
+    second: WorldItem_28
+  - first:
+      213: -251438250262152699
+    second: WorldItem_29
+  - first:
+      213: 836331304814461767
+    second: WorldItem_30
+  - first:
+      213: -6998438214044683241
+    second: WorldItem_31
+  - first:
+      213: 7025026428282806713
+    second: WorldItem_32
+  - first:
+      213: -5913957332270273945
+    second: WorldItem_33
+  - first:
+      213: -1746188028477381735
+    second: WorldItem_34
+  - first:
+      213: -1963658373590227665
+    second: WorldItem_35
+  - first:
+      213: 3003791906380171049
+    second: WorldItem_36
+  - first:
+      213: 5453666857946988293
+    second: WorldItem_37
+  - first:
+      213: -5835600106895680078
+    second: WorldItem_38
+  - first:
+      213: 7161951009785171901
+    second: WorldItem_39
+  - first:
+      213: 7480762587960164094
+    second: WorldItem_40
+  - first:
+      213: -186131449498017993
+    second: WorldItem_41
+  - first:
+      213: -8064271371697751798
+    second: WorldItem_42
+  - first:
+      213: -6613553516849500687
+    second: WorldItem_43
+  - first:
+      213: -8987893469696853673
+    second: WorldItem_44
+  - first:
+      213: -6993491167485999423
+    second: WorldItem_45
+  - first:
+      213: 7373024151264500617
+    second: WorldItem_46
+  - first:
+      213: 7076516127238552979
+    second: WorldItem_47
+  - first:
+      213: 3843397889831139218
+    second: WorldItem_48
+  - first:
+      213: -4871686768394002918
+    second: WorldItem_49
+  - first:
+      213: 7821262355580151786
+    second: WorldItem_50
+  - first:
+      213: -3572799227613963113
+    second: WorldItem_51
+  - first:
+      213: 3125443682802741249
+    second: WorldItem_52
+  - first:
+      213: 5522100145679523609
+    second: WorldItem_53
+  - first:
+      213: 158933054915198489
+    second: WorldItem_54
+  - first:
+      213: 5421893942795463726
+    second: WorldItem_55
+  - first:
+      213: 1565040355098900825
+    second: WorldItem_56
+  - first:
+      213: -7920780536726755440
+    second: WorldItem_57
+  - first:
+      213: 6800431379528971741
+    second: WorldItem_58
+  - first:
+      213: -8103622713951663052
+    second: WorldItem_59
+  - first:
+      213: 2842007480601780197
+    second: WorldItem_60
+  - first:
+      213: -726351655281643208
+    second: WorldItem_61
+  - first:
+      213: -5864588940502288774
+    second: WorldItem_62
+  - first:
+      213: 6312109690117468377
+    second: WorldItem_63
+  - first:
+      213: 1516333181434414264
+    second: WorldItem_64
+  - first:
+      213: 8047486531195622916
+    second: WorldItem_65
+  - first:
+      213: 3456668550199503753
+    second: WorldItem_66
+  - first:
+      213: 6994387800799555680
+    second: WorldItem_67
+  - first:
+      213: 748759021487260900
+    second: WorldItem_68
+  - first:
+      213: -990059076707719480
+    second: WorldItem_69
+  - first:
+      213: 8731928824693499473
+    second: WorldItem_70
+  - first:
+      213: -8738727429552129987
+    second: WorldItem_71
+  - first:
+      213: -8241274180144024427
+    second: WorldItem_72
+  - first:
+      213: 2533041361149262289
+    second: WorldItem_73
+  - first:
+      213: -3367508058424050496
+    second: WorldItem_74
+  - first:
+      213: 7013458201822854821
+    second: WorldItem_75
+  - first:
+      213: 8335630748676276068
+    second: WorldItem_76
+  - first:
+      213: -8045659995156656357
+    second: WorldItem_77
+  - first:
+      213: -8396499170817890144
+    second: WorldItem_78
+  - first:
+      213: -6684898411118808432
+    second: WorldItem_79
+  - first:
+      213: -5452866996233815499
+    second: WorldItem_80
+  - first:
+      213: 4579335980973800967
+    second: WorldItem_81
+  - first:
+      213: 5448794285841104442
+    second: WorldItem_82
+  - first:
+      213: 1853860158275940026
+    second: WorldItem_83
+  - first:
+      213: -1328977070440266888
+    second: WorldItem_84
+  - first:
+      213: 3608684540272706803
+    second: WorldItem_85
+  - first:
+      213: 7721524539498722840
+    second: WorldItem_86
+  - first:
+      213: 5993668717668148962
+    second: WorldItem_87
+  - first:
+      213: -3550808080830739639
+    second: WorldItem_88
+  - first:
+      213: -3007063639150309283
+    second: WorldItem_89
+  - first:
+      213: -4291369890364506836
+    second: WorldItem_90
+  - first:
+      213: 6766661594345192061
+    second: WorldItem_91
+  - first:
+      213: -121437289897380924
+    second: WorldItem_92
+  - first:
+      213: 3561407913843898144
+    second: WorldItem_93
+  - first:
+      213: -5643570765973674477
+    second: WorldItem_94
+  - first:
+      213: 6297106155842354937
+    second: WorldItem_95
+  - first:
+      213: -2931016712231619175
+    second: WorldItem_96
+  - first:
+      213: 4792881430407308925
+    second: WorldItem_97
+  - first:
+      213: -6954032666221598214
+    second: WorldItem_98
+  - first:
+      213: 742516560213516002
+    second: WorldItem_99
+  - first:
+      213: -3901591503075980621
+    second: WorldItem_100
+  - first:
+      213: 6057835664015259631
+    second: WorldItem_101
+  - first:
+      213: -7262283426746973710
+    second: WorldItem_102
+  - first:
+      213: 7982517869982153615
+    second: WorldItem_103
+  - first:
+      213: -6023066265504904688
+    second: WorldItem_104
+  - first:
+      213: 8225107335310123402
+    second: WorldItem_105
+  - first:
+      213: 7872559757406647763
+    second: WorldItem_106
+  - first:
+      213: -8043786626244550259
+    second: WorldItem_107
+  - first:
+      213: 6388835000358927042
+    second: WorldItem_108
+  - first:
+      213: 8064922970838142798
+    second: WorldItem_109
+  - first:
+      213: -4020236981506967013
+    second: WorldItem_110
+  - first:
+      213: 3017026400792351792
+    second: WorldItem_111
+  - first:
+      213: -4083789247295622870
+    second: WorldItem_112
+  - first:
+      213: 5059826784682892287
+    second: WorldItem_113
+  - first:
+      213: -2004595510603074235
+    second: WorldItem_114
+  - first:
+      213: 5624281118517230789
+    second: WorldItem_115
+  - first:
+      213: -3019080271691190911
+    second: WorldItem_116
+  - first:
+      213: 7867412863982166166
+    second: WorldItem_117
+  - first:
+      213: 1898321546367759857
+    second: WorldItem_118
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WorldItem_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14938ced3df8d720800000000000000
+      internalID: 2871323204851569692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9be15f4187fddd0800000000000000
+      internalID: -2459114840113890878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d5bc3a72eefb320800000000000000
+      internalID: 2576039365898362249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5acb1de21dbfe2f50800000000000000
+      internalID: 6858696158384077989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed5b74319f770ad10800000000000000
+      internalID: 2134838135027643870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d75638d72a631300800000000000000
+      internalID: 221637526034995154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99b65456f5ed5b440800000000000000
+      internalID: 4951107866666036121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af9093162fe4e200800000000000000
+      internalID: 208554429581926306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e78dae64b770160800000000000000
+      internalID: 6991692491033968172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110bc2883888bc3c0800000000000000
+      internalID: -4338223717534617583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757462ca911c102e0800000000000000
+      internalID: -2161234030154594473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_11
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b39d1dd700b06c0800000000000000
+      internalID: -4176243689064416445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9b5482fdf752000800000000000000
+      internalID: 10555170568386984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e9e0835c27ad1b0800000000000000
+      internalID: -5631062192698778040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 419f77331bb0aec50800000000000000
+      internalID: 6695176651740281108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5eef2a8093e8b9e0800000000000000
+      internalID: -1605283057224389026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3314a7cd8c757580800000000000000
+      internalID: -8830014546008337601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_17
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c7f6aa316c5bff0800000000000000
+      internalID: -20892835487187941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_18
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96e272203cd049e80800000000000000
+      internalID: -8172892292564701591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_19
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 64
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff210be12ffc1820800000000000000
+      internalID: 2890465582006743038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fada5ea47008b8cb0800000000000000
+      internalID: -4860650604006625873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_21
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8fcaf00acab5fe0800000000000000
+      internalID: -1199175072306366300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00562679a0e7910a0800000000000000
+      internalID: -6910353569268734720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14eedb330281bf680800000000000000
+      internalID: -8720349726886728127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dab46ee919a27210800000000000000
+      internalID: 1329310768866573013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_25
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e63f6ac36882b8c0800000000000000
+      internalID: -3984972758090041629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_26
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442e71482c98881b0800000000000000
+      internalID: -5654117863630839228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldItem_27
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a7beeeb671e78a0800000000000000
+      internalID: -6305576675934766499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e67d334ef4994944294d488bb8a557c6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      WorldItem_0: 2871323204851569692
+      WorldItem_1: -2459114840113890878
+      WorldItem_10: -2161234030154594473
+      WorldItem_11: -4176243689064416445
+      WorldItem_12: 10555170568386984
+      WorldItem_13: -5631062192698778040
+      WorldItem_14: 6695176651740281108
+      WorldItem_15: -1605283057224389026
+      WorldItem_16: -8830014546008337601
+      WorldItem_17: -20892835487187941
+      WorldItem_18: -8172892292564701591
+      WorldItem_19: 2890465582006743038
+      WorldItem_2: 2576039365898362249
+      WorldItem_20: -4860650604006625873
+      WorldItem_21: -1199175072306366300
+      WorldItem_22: -6910353569268734720
+      WorldItem_23: -8720349726886728127
+      WorldItem_24: 1329310768866573013
+      WorldItem_25: -3984972758090041629
+      WorldItem_26: -5654117863630839228
+      WorldItem_27: -6305576675934766499
+      WorldItem_3: 6858696158384077989
+      WorldItem_4: 2134838135027643870
+      WorldItem_5: 221637526034995154
+      WorldItem_6: 4951107866666036121
+      WorldItem_7: 208554429581926306
+      WorldItem_8: 6991692491033968172
+      WorldItem_9: -4338223717534617583
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

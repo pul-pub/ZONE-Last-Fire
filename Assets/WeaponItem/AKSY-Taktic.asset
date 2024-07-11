@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b215ac530a06e5b42b5344771a5d6c2e, type: 3}
+  m_Name: AKSY-Taktic
+  m_EditorClassIdentifier: 
+  name: "\u0422\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0410\u041A\u0421\u0423"
+  id: 82
+  isGraficStore: 1
+  img: {fileID: -2046186640, guid: b7410ebb9c44d2d4d8f3c307927b68f8, type: 3}
+  imgStore: {fileID: 506733167, guid: 99096187623de0a45b8af5df1bf8e8a2, type: 3}
+  pointOfGraficStore: {x: -0.16, y: -0.16}
+  typeAnim: 1
+  imgReload: {fileID: 0}
+  soundShoot: {fileID: 8300000, guid: ba8a2ac9cceae0949bd19baf119193d2, type: 3}
+  soundSpusk: {fileID: 8300000, guid: c219305d33f8b5749ac4d0701d47f7b0, type: 3}
+  typeAmmo: 2
+  animationReload: 
+  dm: 32
+  ammo: 30
+  verticalRecoil: 4.8
+  verticalRecoilSit: 2.8
+  startTimeBtwShot: 0.08
+  currentAmmos: 0

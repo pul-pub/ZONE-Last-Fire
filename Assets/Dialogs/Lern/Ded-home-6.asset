@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8472a2e1e0fc5b2408baf77989f0efe0, type: 3}
+  m_Name: Ded-home-6
+  m_EditorClassIdentifier: 
+  id: 215
+  name: "\u0414\u0435\u0434"
+  money: -1
+  item: {fileID: 0}
+  title: "\u041A\u0430\u043A? \u0414\u0430, \u043F\u0440\u043E\u0441\u0442\u043E,
+    \u043D\u0430 2 \u043A\u043D\u043E\u043F\u043A\u0443 \u0432 \u043F\u0440\u0430\u0432\u043E\u043C
+    \u0432\u0435\u0440\u043D\u0435\u043C \u0443\u0433\u043B\u0443 \u043D\u0430\u0436\u043C\u0438,
+    \u0430 \u0434\u0430\u043B\u044C\u0448\u0435 \u0432\u0441\u0451 \u043F\u0440\u043E\u0441\u0442\u043E."
+  descriptions:
+  - "\u0423\u0433\u0443... \u0418 \u0432\u0441\u0451? \u0410 \u0435\u0441\u043B\u0438
+    \u043C\u0443\u0442\u0430\u043D\u0442\u044B \u0442\u0430\u043C..."
+  descriptionsObject:
+  - {fileID: 11400000, guid: 4ac6e4ea6fb3790439765b6cb362ffa2, type: 2}
+  quest: []
+  typeDescriptions: 00000000

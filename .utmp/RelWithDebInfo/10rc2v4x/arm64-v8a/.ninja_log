@@ -1,0 +1,21 @@
+# ninja log v5
+1544	9880	7422209756493103	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	85a55cf49854d93d
+1887	9842	7422209755461589	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	e9a1acb01386051c
+10324	11873	7422209773292361	C:/Git/ZONA-Last-Fire/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/10rc2v4x/obj/arm64-v8a/libswappywrapper.so	a7507ca6f77732aa
+1666	9864	7422209755250612	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	e0dba49e7bc019b3
+1574	9883	7422209759432688	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	57d67ef4422a92d0
+636	10320	7422209762492819	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	30d9578a98f1295d
+9866	10323	7422209764439421	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	4e6e06857ec0097d
+1870	9876	7422209755910573	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	e2d83920a9450c43
+9843	11637	7422209779004201	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	cd67f991d492c050
+11638	13083	7422209783449009	C:/Git/ZONA-Last-Fire/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/10rc2v4x/obj/arm64-v8a/libgame.so	568e9f91f48e4741
+259	11007	7422737694008640	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	e0dba49e7bc019b3
+591	11017	7422737693687520	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	e9a1acb01386051c
+243	11025	7422737695457781	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	85a55cf49854d93d
+251	11026	7422737699824382	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	57d67ef4422a92d0
+5	11027	7422737700944679	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	30d9578a98f1295d
+445	11028	7422737692964285	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	cd67f991d492c050
+11017	15963	7422737759379413	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	4e6e06857ec0097d
+11008	16035	7422737790513627	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	e2d83920a9450c43
+15963	16834	7422737800676445	C:/Git/ZONA-Last-Fire/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/10rc2v4x/obj/arm64-v8a/libswappywrapper.so	a7507ca6f77732aa
+16036	16856	7422737800731552	C:/Git/ZONA-Last-Fire/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/10rc2v4x/obj/arm64-v8a/libgame.so	568e9f91f48e4741

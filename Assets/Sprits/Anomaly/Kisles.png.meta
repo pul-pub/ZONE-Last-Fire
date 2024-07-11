@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 0237928ae7d17fe4d944aa69081f8c41
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8991969177513777650
+    second: Kisles_0
+  - first:
+      213: -8699213103955638183
+    second: Kisles_1
+  - first:
+      213: -1800295189503123444
+    second: Kisles_2
+  - first:
+      213: -8125818233554852944
+    second: Kisles_3
+  - first:
+      213: -3513686683122990899
+    second: Kisles_4
+  - first:
+      213: 7383692579815572756
+    second: Kisles_5
+  - first:
+      213: -7448951266548573845
+    second: Kisles_6
+  - first:
+      213: -3038507082987946691
+    second: Kisles_7
+  - first:
+      213: 3889631895922954425
+    second: Kisles_8
+  - first:
+      213: 292744540376278990
+    second: Kisles_9
+  - first:
+      213: 7336768387356552738
+    second: Kisles_10
+  - first:
+      213: 6977839643162730795
+    second: Kisles_11
+  - first:
+      213: 5565094119201905629
+    second: Kisles_12
+  - first:
+      213: 6239553858847748996
+    second: Kisles_13
+  - first:
+      213: -3640664535594633829
+    second: Kisles_14
+  - first:
+      213: 3122726432971130190
+    second: Kisles_15
+  - first:
+      213: -205739412592854042
+    second: Kisles_16
+  - first:
+      213: 6127250851948116382
+    second: Kisles_17
+  - first:
+      213: 6831345482907053720
+    second: Kisles_18
+  - first:
+      213: 3853361969750853753
+    second: Kisles_19
+  - first:
+      213: -8293243402985787941
+    second: Kisles_20
+  - first:
+      213: 6974310989544501467
+    second: Kisles_21
+  - first:
+      213: -1071081517077438265
+    second: Kisles_22
+  - first:
+      213: -6414360592717163101
+    second: Kisles_23
+  - first:
+      213: 4580918827487190200
+    second: Kisles_24
+  - first:
+      213: -7204744768319414736
+    second: Kisles_25
+  - first:
+      213: 8515008199819681610
+    second: Kisles_26
+  - first:
+      213: -7573876978912872291
+    second: Kisles_27
+  - first:
+      213: -6440642484890536177
+    second: Kisles_28
+  - first:
+      213: -6753820723272588698
+    second: Kisles_29
+  - first:
+      213: -6600711921436714952
+    second: Kisles_30
+  - first:
+      213: -5070145719557854269
+    second: Kisles_31
+  - first:
+      213: -5746529985981498828
+    second: Kisles_32
+  - first:
+      213: -5245627157849771835
+    second: Kisles_33
+  - first:
+      213: 6646582594405232309
+    second: Kisles_34
+  - first:
+      213: -3659568143509102943
+    second: Kisles_35
+  - first:
+      213: -2038614340059741589
+    second: Kisles_36
+  - first:
+      213: 7905593177907187489
+    second: Kisles_37
+  - first:
+      213: -6522309257947222509
+    second: Kisles_38
+  - first:
+      213: -8985450712548456891
+    second: Kisles_39
+  - first:
+      213: 455949661804378366
+    second: Kisles_40
+  - first:
+      213: 6262560049929768370
+    second: Kisles_41
+  - first:
+      213: -7402932497268337411
+    second: Kisles_42
+  - first:
+      213: 3055709943052103787
+    second: Kisles_43
+  - first:
+      213: -3177650146249461702
+    second: Kisles_44
+  - first:
+      213: 4528551289761630058
+    second: Kisles_45
+  - first:
+      213: 4556288072422841829
+    second: Kisles_46
+  - first:
+      213: -2736799397039282570
+    second: Kisles_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kisles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ff05e6cb13f8f4ab02b5a915463299
+      internalID: -1463193998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kisles_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512105746ce5f794f9a4bf68d86d6576
+      internalID: -1644698263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kisles_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885203f528e88074c873861168328422
+      internalID: 1265258640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kisles_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367f59cacaaa99b4a8ea1422de61716a
+      internalID: -842825332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kisles_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd4de5634698e84fbe774fe28f1420a
+      internalID: -334137972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kisles_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3150d6a1793cf6c4fac6fefb5d67f1c5
+      internalID: 2127654870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2d66d391afe85a64a9051799103824a0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Kisles_0: -1463193998
+      Kisles_1: -1644698263
+      Kisles_2: 1265258640
+      Kisles_3: -842825332
+      Kisles_4: -334137972
+      Kisles_5: 2127654870
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
