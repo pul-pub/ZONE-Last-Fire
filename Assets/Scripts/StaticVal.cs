@@ -10,7 +10,7 @@ public static class StaticVal
     public static string nameSave = null;
     public static bool onYN = false;
     public static int money = 2000;
-    public static int timer = 540;
+    public static int timer = 720;
 
     //---------------Õ¿—“–Œ… »-----------------------
     public static float alfaUi = 0.25f;

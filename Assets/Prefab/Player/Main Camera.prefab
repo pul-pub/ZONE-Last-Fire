@@ -9155,6 +9155,7 @@ MonoBehaviour:
   _isPause: 0
   onDialog: 0
   onPda: 0
+  _cam: {fileID: 0}
   _inventory: {fileID: 2014948163108088983}
 --- !u!114 &149807003127950204
 MonoBehaviour:
@@ -15587,7 +15588,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2119330485
-  m_SortingLayer: 5
+  m_SortingLayer: 0
   m_SortingOrder: 50
   m_RenderMode: 0
   m_MeshDistribution: 0

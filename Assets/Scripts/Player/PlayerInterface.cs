@@ -82,7 +82,7 @@ public class PlayerInterface : MonoBehaviour
     public bool onPda = false;
     private Dialog dialog;
     private Enemy currentEnemyScript;
-    private Camera _cam;
+    public Camera _cam;
     [SerializeField] private Inventory _inventory;
 
     private CamController camC;

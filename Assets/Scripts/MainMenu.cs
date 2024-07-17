@@ -67,7 +67,12 @@ public class MainMenu : MonoBehaviour
     public void Play()
     {
         StaticVal.nameSave = null;
-        StaticVal.peopls = StaticVal.peoplsStart;
+        for(int i = 0; i < 8; i++)
+            StaticVal.peopls[1, i] = StaticVal.peoplsStart[1, i];
+        for (int i = 0; i < 8; i++)
+            StaticVal.peopls[2, i] = StaticVal.peoplsStart[2, i];
+        for (int i = 0; i < 8; i++)
+            StaticVal.peopls[3, i] = StaticVal.peoplsStart[3, i];
         StaticVal.time = new int[2] { 8, 0 };
         StaticVal.idRain = false;
         StaticVal.light = 0.59f;

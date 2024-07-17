@@ -3,7 +3,7 @@ using UnityEngine;
 public class YandexAdsManager : MonoBehaviour
 {
     [SerializeField] private bool isShowAd = true;
-    [SerializeField] private float delayAd = 120f;
+    [SerializeField] private int delayAd = 120;
     private ObjectAdInterstitial ad;
     private PlayerInterface pi;
 
@@ -32,7 +32,7 @@ public class YandexAdsManager : MonoBehaviour
         {
             ad.ShowInterstitial(pi);
 
-            StaticVal.timer += 90;
+            StaticVal.timer += delayAd;
             if (StaticVal.timer >= 1440)
             {
                 StaticVal.timer = 0;

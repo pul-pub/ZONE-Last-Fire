@@ -5,7 +5,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] public bool IsEnemyForPlayer = true;
     [SerializeField] public bool IsDided = false;
-    [SerializeField] public bool IsDestroyOnUnload = false;
+    [SerializeField] public bool IsMoveedEnemy = true;
     [SerializeField] public string Name;
     [Space]
     [Header("Move")]
@@ -60,9 +60,11 @@ public class Enemy : MonoBehaviour
     private bool _isReload = false;
     private bool _isDl = false;
     private Gun _gun;
+    private Camera _camera;
 
     private void Awake()
     {
+        _camera = Camera.main;
         _spriteStore = store.GetComponent<SpriteRenderer>();
         _spriteStoreReload = storeReload.GetComponent<SpriteRenderer>();
         _transformStore = store.GetComponent<Transform>();
@@ -106,7 +108,7 @@ public class Enemy : MonoBehaviour
             head.sprite = armor.spriteHead;
         rig.sprite = armor.spriteRig;
         _gun = gun.Clone();
-        _gun.startTimeBtwShot += 0.5f;
+        _gun.startTimeBtwShot += 0.75f;
 
         Reload();
     }
@@ -114,7 +116,7 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         SetGun();
-        if (!IsDided && IsEnemyForPlayer)
+        if (!IsDided && IsEnemyForPlayer && IsMoveedEnemy)
         {
             Collider2D[] cols = Physics2D.OverlapCircleAll(transform.position, sizeCheckMove, whatIsGround);
             Collider2D[] cols2 = Physics2D.OverlapCircleAll(transform.position, sizeCheckShoot, whatIsGround);
@@ -140,6 +142,12 @@ public class Enemy : MonoBehaviour
             {
                 _vector = new Vector3((target.position - transform.position).normalized.x, 0);
                 _isShoot = true;
+            }
+
+            float x_cam = _camera.WorldToScreenPoint(transform.position).x;
+            if (x_cam < -50 || x_cam > _camera.pixelWidth + 50)
+            {
+                _isShoot = false;
             }
 
             if (_timeBtwShot <= 0)

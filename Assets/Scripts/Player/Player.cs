@@ -304,11 +304,11 @@ public class Player : MonoBehaviour
     public void Medic(TypeMediac type)
     {
         if (type == TypeMediac.Bandage)
-            _Object.Health += 5;
+            _Object.Health += 8;
         else if (type == TypeMediac.Standart)
-            _Object.Health += 10;
+            _Object.Health += 20;
         else if (type == TypeMediac.Arma)
-            _Object.Health += 25;
+            _Object.Health += 48;
         else if (type == TypeMediac.Scientist)
             _Object.Health += 60;
 

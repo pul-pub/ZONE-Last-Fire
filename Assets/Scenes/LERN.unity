@@ -2654,6 +2654,10 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 692585905847637855, guid: 5ab69fbdedeb3a244a8fb7e6dfc9f7e4, type: 3}
+      propertyPath: m_SleepingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1107910419543558848, guid: 5ab69fbdedeb3a244a8fb7e6dfc9f7e4, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2734,6 +2738,10 @@ PrefabInstance:
       propertyPath: mObject
       value: 
       objectReference: {fileID: 11400000, guid: 37c2d5556b830604aa645f8a527da1c9, type: 2}
+    - target: {fileID: 4711403211986061883, guid: 5ab69fbdedeb3a244a8fb7e6dfc9f7e4, type: 3}
+      propertyPath: IsMoveedEnemy
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4711403211986061883, guid: 5ab69fbdedeb3a244a8fb7e6dfc9f7e4, type: 3}
       propertyPath: IsEnemyForPlayer
       value: 1
@@ -4985,6 +4993,10 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 692585905847637855, guid: 5ab69fbdedeb3a244a8fb7e6dfc9f7e4, type: 3}
+      propertyPath: m_SleepingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1107910419543558848, guid: 5ab69fbdedeb3a244a8fb7e6dfc9f7e4, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -5066,6 +5078,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 37c2d5556b830604aa645f8a527da1c9, type: 2}
     - target: {fileID: 4711403211986061883, guid: 5ab69fbdedeb3a244a8fb7e6dfc9f7e4, type: 3}
+      propertyPath: _isShoot
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4711403211986061883, guid: 5ab69fbdedeb3a244a8fb7e6dfc9f7e4, type: 3}
+      propertyPath: IsMoveedEnemy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4711403211986061883, guid: 5ab69fbdedeb3a244a8fb7e6dfc9f7e4, type: 3}
       propertyPath: IsEnemyForPlayer
       value: 1
       objectReference: {fileID: 0}
@@ -5080,7 +5100,7 @@ PrefabInstance:
     - target: {fileID: 4711403211986061883, guid: 5ab69fbdedeb3a244a8fb7e6dfc9f7e4, type: 3}
       propertyPath: 'toBag.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: d49832a2848ca7e44be3eb0ef76f892f, type: 2}
+      objectReference: {fileID: 11400000, guid: b0c7cfea50d17d7428ce913f108c4090, type: 2}
     - target: {fileID: 6542718656088749944, guid: 5ab69fbdedeb3a244a8fb7e6dfc9f7e4, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -9161,6 +9181,10 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 692585905847637855, guid: 5ab69fbdedeb3a244a8fb7e6dfc9f7e4, type: 3}
+      propertyPath: m_SleepingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1107910419543558848, guid: 5ab69fbdedeb3a244a8fb7e6dfc9f7e4, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -9241,6 +9265,10 @@ PrefabInstance:
       propertyPath: mObject
       value: 
       objectReference: {fileID: 11400000, guid: 37c2d5556b830604aa645f8a527da1c9, type: 2}
+    - target: {fileID: 4711403211986061883, guid: 5ab69fbdedeb3a244a8fb7e6dfc9f7e4, type: 3}
+      propertyPath: IsMoveedEnemy
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4711403211986061883, guid: 5ab69fbdedeb3a244a8fb7e6dfc9f7e4, type: 3}
       propertyPath: IsEnemyForPlayer
       value: 1
