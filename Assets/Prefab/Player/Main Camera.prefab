@@ -9204,7 +9204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isShowAd: 1
-  delayAd: 120
+  delayAd: 90
 --- !u!1 &6183136325166412289
 GameObject:
   m_ObjectHideFlags: 0

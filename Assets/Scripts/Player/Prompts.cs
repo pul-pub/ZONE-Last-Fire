@@ -15,7 +15,7 @@ public class Prompts : MonoBehaviour
     {
         if (StaticVal.promptMode)
         {
-            Collider2D[] cols = Physics2D.OverlapBoxAll(player.transform.position, new Vector2(1, 3), 0, whatIsGround);
+            Collider2D[] cols = Physics2D.OverlapBoxAll(player.transform.position, new Vector2(0.1f, 3), 0, whatIsGround);
 
             if (cols.Length > 2)
             {

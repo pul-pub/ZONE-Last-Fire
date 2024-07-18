@@ -52,8 +52,8 @@ MonoBehaviour:
     m_Bits: 128
   offset: {x: 0, y: -1.4, z: 0}
   sizeCheckShoot: 1.2
-  dm: 10
-  startTimeBtwShot: 1.5
+  dm: 15
+  startTimeBtwShot: 1
   animation: 0
 --- !u!1 &3975198710154035800
 GameObject:

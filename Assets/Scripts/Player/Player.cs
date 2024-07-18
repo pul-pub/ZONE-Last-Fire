@@ -53,6 +53,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        data = _playerInterface.gameObject.GetComponent<DataBase>();
         _rb = GetComponent<Rigidbody2D>();
         _audioSource = _anim.gameObject.GetComponent<AudioSource>();
         _weapon = GetComponentInChildren<ObjectWeapon>();

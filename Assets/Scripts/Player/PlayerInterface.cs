@@ -369,7 +369,7 @@ public class PlayerInterface : MonoBehaviour
                         if (q.NameTo == _enemy.Name && q.item != null && q.FindItem(_inventory) > 0)
                         {
                             if (StaticVal.firebaseApp != null)
-                                FirebaseAnalytics.LogEvent("quest_end", new Parameter("ID", q.id));
+                                FirebaseAnalytics.LogEvent("quest_end_" + q.id.ToString());
                             Dialog dl = q.startDialog;
 
                             currentEnemyScript = _enemy;

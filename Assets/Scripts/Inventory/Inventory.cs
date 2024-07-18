@@ -67,6 +67,14 @@ public class Inventory : MonoBehaviour
             AddItem(items, Random.Range(0, 20), _data.items[Random.Range(0, _data.items.Length)], Random.Range(3, 8), 100);
         }
     }
+    private void Ammos()
+    {
+        AddItem(items, 0, _data.items[1], 100, 100);
+        AddItem(items, 1, _data.items[2], 100, 100);
+        AddItem(items, 2, _data.items[3], 100, 100);
+        AddItem(items, 3, _data.items[24], 100, 100);
+        AddItem(items, 4, _data.items[25], 100, 100);
+    }
     //--------------------DELITE-------------------------
 
     private void OnEnable()
@@ -158,6 +166,12 @@ public class Inventory : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.X))
             AddItem(items, 0, _data.items[2], 100, 100);
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            Ammos();
+            UpdateInventory();
+        }
     }
 
 
@@ -540,7 +554,7 @@ public class Inventory : MonoBehaviour
                 StaticVal.money += _currentItem.item.money * _currentItem.count;
 
                 if (StaticVal.firebaseApp != null)
-                    FirebaseAnalytics.LogEvent("take_habar", new Parameter("item_id", _currentItem.item.id));
+                    FirebaseAnalytics.LogEvent("take_habar+" + _currentItem.item.id.ToString());
 
                 AddItem(items, _currentID, _data.items[0], 0, 100);
                 NullSelectedObject();
