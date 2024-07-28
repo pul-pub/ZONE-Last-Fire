@@ -333,7 +333,7 @@ public class PlayerInterface : MonoBehaviour
             {
                 if (col.GetComponents<Artifact>().Length > 0 && col.GetComponent<Artifact>().enabled)
                 {
-                    if (_inventory.AddItemsToNull(col.GetComponent<Artifact>().itemI))
+                    if (_inventory.AddItemsToNull(col.GetComponent<Artifact>().item, 1, 90))
                         Destroy(col.gameObject);
 
                     if (StaticVal.firebaseApp != null)
@@ -366,12 +366,11 @@ public class PlayerInterface : MonoBehaviour
 
                     foreach (Quest q in Quests)
                     {
-                        if (q.NameTo == _enemy.Name && q.item != null && q.FindItem(_inventory) > 0)
+                        if (_enemy.Name == q.NameTo && q.item != null && q.FindItem(_inventory) != -1)
                         {
                             if (StaticVal.firebaseApp != null)
                                 FirebaseAnalytics.LogEvent("quest_end_" + q.id.ToString());
                             Dialog dl = q.startDialog;
-
                             currentEnemyScript = _enemy;
                             EndingQuests.Add(q);
                             Quests.Remove(q);
@@ -381,8 +380,8 @@ public class PlayerInterface : MonoBehaviour
                         }
                         else if (q.NameTo == _enemy.Name && q.item == null)
                         {
-                            if (q.NameTo == "Баян")
-                                _enemy.Dialog[0] = null;
+                            if (StaticVal.firebaseApp != null)
+                                FirebaseAnalytics.LogEvent("quest_end_" + q.id.ToString());
                             if (q.NameTo == "Бармен" && q.id == 1)
                                 StaticVal.peopls[1, 0] = false;
                             currentEnemyScript = _enemy;
@@ -415,7 +414,11 @@ public class PlayerInterface : MonoBehaviour
                     {
                         foreach (Quest qq in EndingQuests)
                             if (qq.id == 20)
+                            {
+                                Debug.Log("You l");
                                 return null;
+                            }
+                                
                         foreach (Quest qq in Quests)
                             if (qq.id == 20)
                                 return null;
@@ -630,11 +633,7 @@ public class PlayerInterface : MonoBehaviour
 
         if (_dialog.item != null)
         {
-            ItemInventory ii = new ItemInventory();
-            ii.item = _dialog.item;
-            ii.cond = 75;
-            ii.count = _dialog.countItem;
-            _inventory.AddItemsToNull(ii);
+            _inventory.AddItemsToNull(_dialog.item, _dialog.countItem, 75);
         }
 
         if (_dialog.descriptions.Length >= 1)
@@ -817,6 +816,9 @@ public class PlayerInterface : MonoBehaviour
                     StaticVal.peopls[1, 4] = true;
                     StaticVal.peopls[3, 4] = true;
                     StaticVal.peopls[1, 1] = false;
+                    StaticVal.peopls[3, 0] = false;
+                    StaticVal.peopls[3, 1] = false;
+                    StaticVal.peopls[3, 2] = false;
                 }
             }
         }

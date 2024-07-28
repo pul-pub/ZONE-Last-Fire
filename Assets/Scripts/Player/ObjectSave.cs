@@ -35,5 +35,6 @@ public class ObjectSave
     public float volSound;
     public bool vibroMode;
     public bool promptMode;
+    public int FPSMode;
     //---------------Õ¿—“–Œ… »----------------
 }

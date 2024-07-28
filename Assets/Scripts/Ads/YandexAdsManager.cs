@@ -30,8 +30,12 @@ public class YandexAdsManager : MonoBehaviour
     {
         if (isShowAd && StaticVal.time[0] * 60 + StaticVal.time[1] >= StaticVal.timer)
         {
+#if !UNITY_EDITOR
             ad.ShowInterstitial(pi);
-
+#else
+            Debug.Log("Ad vived");
+            pi.Loader(null, null);
+#endif
             StaticVal.timer += delayAd;
             if (StaticVal.timer >= 1440)
             {

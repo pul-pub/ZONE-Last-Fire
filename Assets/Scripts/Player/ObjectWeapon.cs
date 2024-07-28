@@ -80,31 +80,19 @@ public class ObjectWeapon : MonoBehaviour
         Gun[] guns_2 = _inventory.FindGun();
         if (guns_2[0] == null && _guns[0] != null)
         {
-            ItemInventory ii = new ItemInventory();
-
             foreach (Item i in player.data.items)
             {
-                if (i.type == TypeItem.Ammo && i.typeAmmo == _guns[0].typeAmmo)
-                    ii.item = i;
+                if (i.type == TypeItem.Ammo && i.typeAmmo == _guns[0].typeAmmo && _guns[0].currentAmmos > 0)
+                    _inventory.AddItemsToNull(i, _guns[0].currentAmmos, 100);
             }
-            ii.cond = 100;
-            ii.count = _guns[0].currentAmmos;
-
-            _inventory.AddItemsToNull(ii);
         }
         if (guns_2[1] == null && _guns[1] != null)
         {
-            ItemInventory ii = new ItemInventory();
-
             foreach (Item i in player.data.items)
             {
-                if (i.type == TypeItem.Ammo && i.typeAmmo == _guns[1].typeAmmo)
-                    ii.item = i;
+                if (i.type == TypeItem.Ammo && i.typeAmmo == _guns[1].typeAmmo && _guns[1].currentAmmos > 0)
+                    _inventory.AddItemsToNull(i, _guns[1].currentAmmos, 100);
             }
-            ii.cond = 100;
-            ii.count = _guns[1].currentAmmos;
-
-            _inventory.AddItemsToNull(ii);
         }
         _guns = guns_2;
         UpdateWeapon();

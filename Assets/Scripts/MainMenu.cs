@@ -17,6 +17,7 @@ public class MainMenu : MonoBehaviour
 
     private void Awake()
     {
+#if !UNITY_EDITOR
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task => {
             var dependencyStatus = task.Result;
             if (dependencyStatus == DependencyStatus.Available)
@@ -32,6 +33,9 @@ public class MainMenu : MonoBehaviour
 
         string json = File.ReadAllText(Application.persistentDataPath + "/save.json");
         ObjectSave save = JsonUtility.FromJson<ObjectSave>(json);
+#else
+        ObjectSave save = null;
+#endif
 
         if (save != null)
         {
@@ -44,8 +48,12 @@ public class MainMenu : MonoBehaviour
             sliderMusic.value = save.volSound;
             toggleVibroMode.isOn = save.vibroMode;
             togglePromptMode.isOn = save.promptMode;
+            StaticVal.FPSMode = save.FPSMode;
             UpdateMods();
         }
+
+        Application.targetFrameRate = StaticVal.FPSMode;
+        AudioListener.volume = StaticVal.volSound;
     }
 
     public void UpdateMods()
@@ -54,6 +62,7 @@ public class MainMenu : MonoBehaviour
         StaticVal.volSound = sliderMusic.value;
         StaticVal.vibroMode = toggleVibroMode.isOn;
         StaticVal.promptMode = togglePromptMode.isOn;
+        
 
         foreach(Image img in imgs)
         {
@@ -62,6 +71,12 @@ public class MainMenu : MonoBehaviour
                 img.color = new Color(img.color.r, img.color.g, img.color.b, sliderHDU.value);
             }
         }
+    }
+
+    public void UpdateFPSMode(int fps)
+    {
+        StaticVal.FPSMode = fps;
+        Application.targetFrameRate = StaticVal.FPSMode;
     }
 
     public void Play()
@@ -113,9 +128,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(save.indexScene, LoadSceneMode.Single);
     }
 
-    public void OpenURL()
+    public void OpenURL(string url)
     {
-        Application.OpenURL("https://discord.gg/fHYwnNShVA");
+        Application.OpenURL(url);
     }
 
     public void Exit()

@@ -23,6 +23,8 @@ public class Quest : ScriptableObject
 
     public int FindItem(Inventory inventory, bool del = true)
     {
-        return inventory.FindItem(item, count, del);
+        if (item != null)
+            return inventory.FindItem(item, count, del);
+        return -1;
     }
 }

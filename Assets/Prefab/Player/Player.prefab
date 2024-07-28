@@ -1194,7 +1194,7 @@ MonoBehaviour:
   tr: {fileID: 3279774448301764417}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   sizeCheckBox: {x: 30, y: 5}
   UpdateTime: 0.25
   isScan: 0

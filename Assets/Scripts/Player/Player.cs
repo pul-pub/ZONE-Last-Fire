@@ -269,6 +269,7 @@ public class Player : MonoBehaviour
         save.volSound = StaticVal.volSound;
         save.vibroMode = StaticVal.vibroMode;
         save.promptMode = StaticVal.promptMode;
+        save.FPSMode = StaticVal.FPSMode;
 
         string json = JsonUtility.ToJson(save, true);
         File.WriteAllText(Application.persistentDataPath + _name, json);

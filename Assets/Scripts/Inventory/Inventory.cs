@@ -444,7 +444,7 @@ public class Inventory : MonoBehaviour
     {
         for (int i = coutCellMain + countCellOutfill; i < coutCellMain + countCellOutfill + coutCellEnemy; i++)
         {
-            AddItemsToNull(items[i]);
+            AddItemsInventoryToNull(items[i]);
             AddItem(items, i, _data.items[0], 0, 100);
         }
         NullSelectedObject();
@@ -631,13 +631,29 @@ public class Inventory : MonoBehaviour
 
 
 
-    public bool AddItemsToNull(ItemInventory item)
+    public bool AddItemsInventoryToNull(ItemInventory item)
     {
         for (int i = 0; i < coutCellMain; i++)
         {
             if (items[i].item.id == 0)
             {
                 AddInventoryItem(i, item);
+                UpdateInventory();
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public bool AddItemsToNull(Item item, int _count, int _cond)
+    {
+        for (int i = 0; i < coutCellMain; i++)
+        {
+            if (items[i].item.id == 0)
+            {
+                AddItem(items, i, item, _count, _cond);
+                UpdateInventory();
                 return true;
             }
         }
@@ -761,25 +777,26 @@ public class Inventory : MonoBehaviour
     public int FindItem(Item itemFind, int itemCount, bool del = false)
     {
         foreach (ItemInventory item in items)
-        {
-            if (item.item == itemFind && item.count >= itemCount)
+        {           
+            if (item.item.id == itemFind.id && item.count >= itemCount)
             {
                 if (del)
                 {
-                    if (item.count - itemCount <= 0)
+                    if (item.count - itemCount >= 0)
                     {
                         AddItem(items, item.INDIFICATOR, _data.items[0], 0, 100);
+                        UpdateInventory();
                     }
                     else
                     {
                         items[item.INDIFICATOR].count -= itemCount;
+                        UpdateInventory();
                     }
                 }
-
+                
                 return item.INDIFICATOR;
             }
         }
-
         return -1;
     }
 }

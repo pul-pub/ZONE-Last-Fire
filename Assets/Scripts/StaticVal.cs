@@ -4,7 +4,11 @@ public enum TypePlatform { PC, Mobile }
 
 public static class StaticVal
 {
+#if !UNITY_EDITOR
     public static TypePlatform type = TypePlatform.Mobile;
+#else
+    public static TypePlatform type = TypePlatform.PC;
+#endif
     public static FirebaseApp firebaseApp;
 
     public static string nameSave = null;
@@ -17,6 +21,7 @@ public static class StaticVal
     public static float volSound = 1.0f;
     public static bool vibroMode = false;
     public static bool promptMode = true;
+    public static int FPSMode = 60;
     //---------------Õ¿—“–Œ… »-----------------------
 
     public static int[] time = new int[2]{ 8, 0 };

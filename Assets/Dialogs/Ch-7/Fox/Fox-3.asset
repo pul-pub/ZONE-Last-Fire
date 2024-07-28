@@ -16,6 +16,7 @@ MonoBehaviour:
   name: "\u0424\u043E\u043A\u0441"
   money: -1
   item: {fileID: 11400000, guid: 2df8231e76535874fbe51b23f3f7be3e, type: 2}
+  countItem: 1
   title: "[\u041E\u043D \u0441\u0432\u0435\u0440\u0438\u043B ID] \u0414\u0430, \u0432\u0441\u0451...
     \u041D\u0435 \u043A\u0430\u043A\u0438\u0445 \u043F\u0440\u0435\u0442\u0435\u043D\u0437\u0438\u0439.
     \u041D\u0430 \u041A\u041F\u041A."
