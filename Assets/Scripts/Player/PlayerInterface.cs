@@ -1,4 +1,4 @@
-using Firebase.Analytics;
+//using Firebase.Analytics;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -271,8 +271,8 @@ public class PlayerInterface : MonoBehaviour
     public void Loader(object sender, EventArgs args)
     {
         Resume();
-        if (StaticVal.firebaseApp != null && SceneManager.GetActiveScene().buildIndex == 9)
-            FirebaseAnalytics.LogEvent(FirebaseAnalytics.EventTutorialComplete);
+        //if (StaticVal.firebaseApp != null && SceneManager.GetActiveScene().buildIndex == 9)
+        //    FirebaseAnalytics.LogEvent(FirebaseAnalytics.EventTutorialComplete);
         SceneManager.LoadScene(door.SceneName, LoadSceneMode.Single);
     }
 
@@ -336,8 +336,8 @@ public class PlayerInterface : MonoBehaviour
                     if (_inventory.AddItemsToNull(col.GetComponent<Artifact>().item, 1, 90))
                         Destroy(col.gameObject);
 
-                    if (StaticVal.firebaseApp != null)
-                        FirebaseAnalytics.LogEvent("find_art", new Parameter("art_id", col.GetComponent<Artifact>().item.id));
+                    //if (StaticVal.firebaseApp != null)
+                    //    FirebaseAnalytics.LogEvent("find_art", new Parameter("art_id", col.GetComponent<Artifact>().item.id));
                 }
             }
         }
@@ -368,8 +368,8 @@ public class PlayerInterface : MonoBehaviour
                     {
                         if (_enemy.Name == q.NameTo && q.item != null && q.FindItem(_inventory) != -1)
                         {
-                            if (StaticVal.firebaseApp != null)
-                                FirebaseAnalytics.LogEvent("quest_end_" + q.id.ToString());
+                            //if (StaticVal.firebaseApp != null)
+                            //    FirebaseAnalytics.LogEvent("quest_end_" + q.id.ToString());
                             Dialog dl = q.startDialog;
                             currentEnemyScript = _enemy;
                             EndingQuests.Add(q);
@@ -380,8 +380,8 @@ public class PlayerInterface : MonoBehaviour
                         }
                         else if (q.NameTo == _enemy.Name && q.item == null)
                         {
-                            if (StaticVal.firebaseApp != null)
-                                FirebaseAnalytics.LogEvent("quest_end_" + q.id.ToString());
+                            //if (StaticVal.firebaseApp != null)
+                            //    FirebaseAnalytics.LogEvent("quest_end_" + q.id.ToString());
                             if (q.NameTo == "Бармен" && q.id == 1)
                                 StaticVal.peopls[1, 0] = false;
                             currentEnemyScript = _enemy;

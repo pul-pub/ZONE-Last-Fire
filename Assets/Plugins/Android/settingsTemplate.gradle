@@ -21,9 +21,6 @@ dependencyResolutionManagement {
         maven {
             url "https://maven.google.com/" // Assets/YandexMobileAds/Editor/YandexMobileadsDependencies.xml:15, Assets/YandexMobileAds/Editor/YandexMobileadsDependencies.xml:20
         }
-        maven {
-            url (unityProjectPath + "/Assets/GeneratedLocalRepo/Firebase/m2repository") // Packages/com.google.firebase.app/Firebase/Editor/AppDependencies.xml:22, Packages/com.google.firebase.analytics/Firebase/Editor/AnalyticsDependencies.xml:18
-        }
         mavenLocal()
 // Android Resolver Repos End
         flatDir {

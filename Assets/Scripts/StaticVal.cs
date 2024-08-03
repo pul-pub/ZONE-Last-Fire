@@ -1,5 +1,3 @@
-using Firebase;
-
 public enum TypePlatform { PC, Mobile }
 
 public static class StaticVal
@@ -9,7 +7,6 @@ public static class StaticVal
 #else
     public static TypePlatform type = TypePlatform.PC;
 #endif
-    public static FirebaseApp firebaseApp;
 
     public static string nameSave = null;
     public static bool onYN = false;

@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.EventSystems;
 using System.IO;
 using System.Collections;
-using Firebase.Analytics;
+//using Firebase.Analytics;
 
 public enum TypeInventory { Outfit, EnemyBag, Shop, CLOSE, Habar }
 
@@ -525,8 +525,8 @@ public class Inventory : MonoBehaviour
                                     _currentID, false);
 
                             StaticVal.money -= _currentItem.item.money;
-                            if (StaticVal.firebaseApp != null)
-                                FirebaseAnalytics.LogEvent("by_store", new Parameter("ID_item", it.item.id));
+                            //if (StaticVal.firebaseApp != null)
+                            //    FirebaseAnalytics.LogEvent("by_store", new Parameter("ID_item", it.item.id));
                         }
                         NullSelectedObject();
                         UpdateInventory();
@@ -553,8 +553,8 @@ public class Inventory : MonoBehaviour
 
                 StaticVal.money += _currentItem.item.money * _currentItem.count;
 
-                if (StaticVal.firebaseApp != null)
-                    FirebaseAnalytics.LogEvent("take_habar+" + _currentItem.item.id.ToString());
+                //if (StaticVal.firebaseApp != null)
+                //    FirebaseAnalytics.LogEvent("take_habar+" + _currentItem.item.id.ToString());
 
                 AddItem(items, _currentID, _data.items[0], 0, 100);
                 NullSelectedObject();

@@ -2,9 +2,6 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using Firebase.Extensions;
-using Firebase;
-using Firebase.Analytics;
 
 public class MainMenu : MonoBehaviour
 {
@@ -18,19 +15,6 @@ public class MainMenu : MonoBehaviour
     private void Awake()
     {
 #if !UNITY_EDITOR
-        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task => {
-            var dependencyStatus = task.Result;
-            if (dependencyStatus == DependencyStatus.Available)
-            {
-                StaticVal.firebaseApp = FirebaseApp.DefaultInstance;
-                Debug.Log("Begin start Firebase on application! Name modul: " + StaticVal.firebaseApp);
-            }
-            else
-            {
-                Debug.LogError(System.String.Format("Could not resolve all Firebase dependencies: {0}", dependencyStatus));
-            }
-        });
-
         string json = File.ReadAllText(Application.persistentDataPath + "/save.json");
         ObjectSave save = JsonUtility.FromJson<ObjectSave>(json);
 #else
@@ -104,7 +88,7 @@ public class MainMenu : MonoBehaviour
         json = JsonUtility.ToJson(save, true);
         File.WriteAllText(Application.persistentDataPath + "/save.json", json);
         */
-        FirebaseAnalytics.LogEvent(FirebaseAnalytics.EventTutorialBegin);
+        //FirebaseAnalytics.LogEvent(FirebaseAnalytics.EventTutorialBegin);
         SceneManager.LoadScene("LERN", LoadSceneMode.Single);
     }
 

@@ -1,8 +1,5 @@
 {
   "dependencies": {
-    "com.google.external-dependency-manager": "file:../Assets/com.google.external-dependency-manager-1.2.177.tgz",
-    "com.google.firebase.analytics": "file:../Assets/com.google.firebase.analytics-12.1.0.tgz",
-    "com.google.firebase.app": "file:../Assets/com.google.firebase.app-12.1.0.tgz",
     "com.unity.collab-proxy": "2.4.3",
     "com.unity.feature.2d": "2.0.0",
     "com.unity.ide.rider": "3.0.27",
