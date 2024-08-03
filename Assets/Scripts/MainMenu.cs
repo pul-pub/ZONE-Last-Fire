@@ -1,3 +1,5 @@
+using Mycom.Tracker.Unity;
+using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,6 +19,9 @@ public class MainMenu : MonoBehaviour
 #if !UNITY_EDITOR
         string json = File.ReadAllText(Application.persistentDataPath + "/save.json");
         ObjectSave save = JsonUtility.FromJson<ObjectSave>(json);
+        if (StaticVal.trecker_id_android != null) 
+            MyTracker.Init(StaticVal.trecker_id_android);
+        
 #else
         ObjectSave save = null;
 #endif
@@ -88,7 +93,10 @@ public class MainMenu : MonoBehaviour
         json = JsonUtility.ToJson(save, true);
         File.WriteAllText(Application.persistentDataPath + "/save.json", json);
         */
-        //FirebaseAnalytics.LogEvent(FirebaseAnalytics.EventTutorialBegin);
+        if (StaticVal.trecker_id_android != null)
+        {
+            MyTracker.TrackEvent("tutorial_begin");
+        }
         SceneManager.LoadScene("LERN", LoadSceneMode.Single);
     }
 

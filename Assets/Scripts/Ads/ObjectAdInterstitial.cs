@@ -2,6 +2,8 @@ using UnityEngine;
 using YandexMobileAds.Base;
 using YandexMobileAds;
 using System;
+using Mycom.Tracker.Unity;
+using System.Collections.Generic;
 
 public class ObjectAdInterstitial : MonoBehaviour
 {
@@ -59,8 +61,10 @@ public class ObjectAdInterstitial : MonoBehaviour
 
     public void OnEndShowInterstitial(object sender, EventArgs args)
     {
-        //if (StaticVal.firebaseApp != null)
-        //    FirebaseAnalytics.LogEvent("viewing_ad_inter");
+        if (StaticVal.trecker_id_android != null)
+        {
+            MyTracker.TrackEvent("viewing_ad_inter");
+        }
         DestroyInterstitial();
         RequestInterstitial();
     }

@@ -1,4 +1,5 @@
 //using Firebase.Analytics;
+using Mycom.Tracker.Unity;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -271,8 +272,10 @@ public class PlayerInterface : MonoBehaviour
     public void Loader(object sender, EventArgs args)
     {
         Resume();
-        //if (StaticVal.firebaseApp != null && SceneManager.GetActiveScene().buildIndex == 9)
-        //    FirebaseAnalytics.LogEvent(FirebaseAnalytics.EventTutorialComplete);
+        if (StaticVal.trecker_id_android != null && SceneManager.GetActiveScene().buildIndex == 9)
+        {
+            MyTracker.TrackEvent("tutorial_complete");
+        }
         SceneManager.LoadScene(door.SceneName, LoadSceneMode.Single);
     }
 
@@ -336,8 +339,13 @@ public class PlayerInterface : MonoBehaviour
                     if (_inventory.AddItemsToNull(col.GetComponent<Artifact>().item, 1, 90))
                         Destroy(col.gameObject);
 
-                    //if (StaticVal.firebaseApp != null)
-                    //    FirebaseAnalytics.LogEvent("find_art", new Parameter("art_id", col.GetComponent<Artifact>().item.id));
+                    if (StaticVal.trecker_id_android != null)
+                    {
+                        Dictionary<string, string> param = new Dictionary<string, string>();
+                        param["ID"] = col.GetComponent<Artifact>().item.id.ToString();
+
+                        MyTracker.TrackEvent("take_habar", param);
+                    }
                 }
             }
         }
@@ -368,8 +376,13 @@ public class PlayerInterface : MonoBehaviour
                     {
                         if (_enemy.Name == q.NameTo && q.item != null && q.FindItem(_inventory) != -1)
                         {
-                            //if (StaticVal.firebaseApp != null)
-                            //    FirebaseAnalytics.LogEvent("quest_end_" + q.id.ToString());
+                            if (StaticVal.trecker_id_android != null)
+                            {
+                                Dictionary<string, string> param = new Dictionary<string, string>();
+                                param["ID"] = q.id.ToString();
+
+                                MyTracker.TrackEvent("take_habar", param);
+                            }
                             Dialog dl = q.startDialog;
                             currentEnemyScript = _enemy;
                             EndingQuests.Add(q);
@@ -380,8 +393,13 @@ public class PlayerInterface : MonoBehaviour
                         }
                         else if (q.NameTo == _enemy.Name && q.item == null)
                         {
-                            //if (StaticVal.firebaseApp != null)
-                            //    FirebaseAnalytics.LogEvent("quest_end_" + q.id.ToString());
+                            if (StaticVal.trecker_id_android != null)
+                            {
+                                Dictionary<string, string> param = new Dictionary<string, string>();
+                                param["ID"] = q.id.ToString();
+
+                                MyTracker.TrackEvent("take_habar", param);
+                            }
                             if (q.NameTo == "Бармен" && q.id == 1)
                                 StaticVal.peopls[1, 0] = false;
                             currentEnemyScript = _enemy;
