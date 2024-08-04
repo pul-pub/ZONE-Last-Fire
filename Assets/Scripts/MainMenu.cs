@@ -1,4 +1,5 @@
 using Mycom.Tracker.Unity;
+using RuStore.AppUpdate;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -8,11 +9,14 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private GameObject objButton;
+    [SerializeField] private GameObject waringUpdate;
     [SerializeField] private Slider sliderMusic;
     [SerializeField] private Slider sliderHDU;
     [SerializeField] private Toggle toggleVibroMode;
     [SerializeField] private Toggle togglePromptMode;
     [SerializeField] private Image[] imgs;
+
+    AppUpdateInfo infoUpdate = null;
 
     private void Awake()
     {
@@ -21,7 +25,19 @@ public class MainMenu : MonoBehaviour
         ObjectSave save = JsonUtility.FromJson<ObjectSave>(json);
         if (StaticVal.trecker_id_android != null) 
             MyTracker.Init(StaticVal.trecker_id_android);
-        
+
+        RuStoreAppUpdateManager.Instance.Init();
+        RuStoreAppUpdateManager.Instance.GetAppUpdateInfo(onFailure: (error) => { }, onSuccess: (info) => { infoUpdate = info; });
+        if (infoUpdate != null)
+        {
+            if (infoUpdate.availableVersionCode >= 2)
+            {
+                RuStoreAppUpdateManager.Instance.StartUpdateFlow(
+                    UpdateType.FLEXIBLE, 
+                    onFailure: (error) => { },
+                    onSuccess: (resultCode) => { });
+            }
+        }
 #else
         ObjectSave save = null;
 #endif

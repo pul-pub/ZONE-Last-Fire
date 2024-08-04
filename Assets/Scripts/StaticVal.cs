@@ -4,7 +4,7 @@ public static class StaticVal
 {
 #if !UNITY_EDITOR
     public static TypePlatform type = TypePlatform.Mobile;
-    public static string trecker_id_android = null;
+    public static string trecker_id_android = "26444911395610227673";
 #else
     public static TypePlatform type = TypePlatform.PC;
     public static string trecker_id_android = null;

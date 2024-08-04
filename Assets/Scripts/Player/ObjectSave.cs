@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class ObjectSave 
 {
+    #region IMPOTANT
+    public string version;
+    #endregion
+
     public int[] idItem;
     public int[] coutItem;
     public int[] condItem;
@@ -13,9 +17,11 @@ public class ObjectSave
     public int[] idQuests;
     public int[] idEndingQuests;
 
+    #region STATICVAL.PEOPLS
     public bool[] peopls1 = new bool[8] { true, false, true, true, false, true, true, true };
     public bool[] peopls2 = new bool[8] { false, false, false, true, false, true, true, true };
     public bool[] peopls3 = new bool[8] { false, false, false, false, false, false, true, true };
+    #endregion
 
     public float health;
     public float armor;
@@ -30,11 +36,16 @@ public class ObjectSave
     public bool isSave = false;
     public int indexScene;
 
-    //---------------Õ¿—“–Œ… »----------------
+    #region SETTINGS
     public float alfaUi;
     public float volSound;
     public bool vibroMode;
     public bool promptMode;
     public int FPSMode;
-    //---------------Õ¿—“–Œ… »----------------
+    #endregion
+
+    #region SHELTER
+    public Vector2[] posFurniture;
+    public int[] idsFurniture;
+    #endregion
 }

@@ -1,3 +1,4 @@
+using RuStore.Review;
 using UnityEngine;
 
 public class YandexAdsManager : MonoBehaviour
@@ -26,9 +27,25 @@ public class YandexAdsManager : MonoBehaviour
         }
     }
 
+    public void SowingScreenReview()
+    {
+        if (StaticVal.time[0] * 60 + StaticVal.time[1] >= 720)
+        {
+#if !UNITY_EDITOR
+            RuStoreReviewManager.Instance.RequestReviewFlow(
+                onFailure: (error) => { },
+                onSuccess: () => {
+                    RuStoreReviewManager.Instance.LaunchReviewFlow(
+                        onFailure: (error) => { },
+                        onSuccess: () => { });
+                });
+#endif
+        }
+    }
+
     public void ShowingAd()
     {
-        if (isShowAd && StaticVal.time[0] * 60 + StaticVal.time[1] >= StaticVal.timer)
+        if (StaticVal.time[0] * 60 + StaticVal.time[1] >= StaticVal.timer)
         {
 #if !UNITY_EDITOR
             ad.ShowInterstitial(pi);

@@ -7,6 +7,8 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-process:2.4.1' // Assets/YandexMobileAds/Editor/YandexMobileadsDependencies.xml:20
     implementation 'com.my.tracker:mytracker-sdk:3.0.+' // Assets/Mycom.Tracker.Unity/Editor/MyTrackerDependencies.xml:3
     implementation 'com.yandex.android:mobileads:7.1.0' // Assets/YandexMobileAds/Editor/YandexMobileadsDependencies.xml:15
+    implementation 'ru.rustore.sdk:appupdate:[3.0.0, 4.0.0)' // Assets/RuStoreSDK/AppUpdate/Editor/AppUpdateDependencies.xml:7
+    implementation 'ru.rustore.sdk:review:[2.0.0, 3.0.0)' // Assets/RuStoreSDK/Review/Editor/ReviewDependencies.xml:7
 // Android Resolver Dependencies End
 **DEPS**}
 

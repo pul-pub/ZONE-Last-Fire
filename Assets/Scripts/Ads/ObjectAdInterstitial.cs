@@ -3,7 +3,6 @@ using YandexMobileAds.Base;
 using YandexMobileAds;
 using System;
 using Mycom.Tracker.Unity;
-using System.Collections.Generic;
 
 public class ObjectAdInterstitial : MonoBehaviour
 {
