@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Label text="Label" name="ExperienceLabel" style="color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/Fonts/PixgamerRegular-OVD6A.ttf?fileID=12800000&amp;guid=93e292c3ae8849c4da3c1a1c04a0b9f2&amp;type=3#PixgamerRegular-OVD6A&quot;); -unity-text-align: middle-center; font-size: 48px; position: absolute; bottom: 60%; right: 0; left: 0;" />
+</ui:UXML>

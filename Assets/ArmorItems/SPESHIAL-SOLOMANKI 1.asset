@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 200
   bulletResistance: 0
-  radioProtection: 0
-  bioSecurity: 0
-  chemicalProtection: 0
+  tearProtection: 0
   spriteBody: {fileID: 5701118941178126047, guid: bd5a398b6692b5a46b9fa9933d820560, type: 3}
+  headIsMask: 0
   spriteHead: {fileID: -6713549955994642254, guid: 7927c1fc82538b04cab34f0ecb225da3, type: 3}
   spriteRig: {fileID: 9215244992351540761, guid: bd5a398b6692b5a46b9fa9933d820560, type: 3}
   offset: {x: 0, y: 0}

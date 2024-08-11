@@ -16,6 +16,7 @@ MonoBehaviour:
   bulletResistance: 20
   tearProtection: 24
   spriteBody: {fileID: 8104990514320950173, guid: 948c56d9fe9955143804b3181e06c46d, type: 3}
+  headIsMask: 0
   spriteHead: {fileID: -1390779143266705064, guid: 948c56d9fe9955143804b3181e06c46d, type: 3}
   spriteRig: {fileID: 8605492387508296218, guid: 948c56d9fe9955143804b3181e06c46d, type: 3}
   offset: {x: 0, y: 0}

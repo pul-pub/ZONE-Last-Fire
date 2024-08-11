@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] public bool IsDided = false;
     [SerializeField] public bool IsMoveedEnemy = true;
     [SerializeField] public string Name;
+    [SerializeField] public Object didePrefb;
+    [SerializeField] private int xp;
     [Space]
     [Header("Move")]
     [SerializeField] private MoveedObject mObject;
@@ -61,6 +63,7 @@ public class Enemy : MonoBehaviour
     private bool _isDl = false;
     private Gun _gun;
     private Camera _camera;
+    private bool ex = false;
 
     private void Awake()
     {
@@ -175,6 +178,49 @@ public class Enemy : MonoBehaviour
             _flagGun = false;
             transform.position = new Vector2(transform.position.x, -0.5f);
             transform.eulerAngles = new Vector3(0, 0, -90);
+
+            if (!ex)
+            {
+                GameObject popup = Instantiate(didePrefb, transform.position, Quaternion.identity) as GameObject;
+                ExperiencePopup exPop = popup.GetComponent<ExperiencePopup>();
+                popup.transform.SetParent(null);
+
+                foreach (int i in StaticVal.idSkills)
+                {
+                    if (i != -1)
+                    {
+                        foreach (Skill s in StaticVal.dataBase.skils)
+                        {
+                            if (s.Modifier == TypeModifier.Lerning)
+                            {
+                                if (s.LevelModifier == 1)
+                                {
+                                    exPop.str = "+" + (xp + 2) + " Опыта"; 
+                                    StaticVal.notSelectedXP += (xp + 2);
+                                }
+                                else if (s.LevelModifier == 2)
+                                {
+                                    exPop.str = "+" + (xp + 4) + " Опыта";
+                                    StaticVal.notSelectedXP += (xp + 4);
+                                }
+                                else if (s.LevelModifier == 3)
+                                {
+                                    exPop.str = "+" + (xp + 6) + " Опыта";
+                                    StaticVal.notSelectedXP += (xp + 6);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if (exPop.str == null || exPop.str == "")
+                {
+                    exPop.str = "+" + xp + " Опыта";
+                    StaticVal.notSelectedXP += xp;
+                }
+
+                ex = true;
+            }
         }
 
         if (Name == "Проводник"  && !_isDl)

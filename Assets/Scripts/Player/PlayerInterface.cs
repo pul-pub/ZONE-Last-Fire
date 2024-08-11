@@ -91,6 +91,7 @@ public class PlayerInterface : MonoBehaviour
     private Collider2D _enemyBg;
     private List<Item> itm;
     private DoorObject door;
+    private SkillController skillController;
     private float timer = 10f;
 
     private void OnEnable() => player.OnSetActivDialog += OpenongBagOrDialog;
@@ -135,10 +136,12 @@ public class PlayerInterface : MonoBehaviour
         foreach (TextMeshProUGUI t in screenMobil.GetComponentsInChildren<TextMeshProUGUI>())
             t.color = new Color(t.color.r, t.color.g, t.color.b, StaticVal.alfaUi);
 
+        skillController = GetComponent<SkillController>();
         yandexAdsManager = GetComponent<YandexAdsManager>();
         _cam = Camera.main;
-        if (StaticVal.type != TypePlatform.Mobile)
-            screenMobil.SetActive(false);
+        StaticVal.dataBase = GetComponent<DataBase>();
+        //if (StaticVal.type != TypePlatform.Mobile)
+        //    screenMobil.SetActive(false);
 
         if (SceneManager.GetActiveScene().buildIndex <= 2 ||
             SceneManager.GetActiveScene().buildIndex == 6 ||
@@ -198,6 +201,12 @@ public class PlayerInterface : MonoBehaviour
         SetPosMerker();
         SetTextForAmmo();
         SetTimers();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            StaticVal.notSelectedXP += 5;
+            //skillController.AddXP();
+        }
     }
 
     private void OnDrawGizmos()
@@ -246,6 +255,7 @@ public class PlayerInterface : MonoBehaviour
 
     public void Exit()
     {
+        yandexAdsManager.SowingScreenReview();
         Resume();
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
@@ -520,7 +530,7 @@ public class PlayerInterface : MonoBehaviour
         }
         yield return new WaitForSeconds(2f);
 
-        StaticVal.nameSave = "/save.json";
+        StaticVal.nameSave = StaticVal.nameSave = "/" + StaticVal.idSesion + ".json";
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 

@@ -11,4 +11,6 @@ public class DataBase : MonoBehaviour
     [SerializeField] public Gun[] guns;
     [SerializeField] public Armor[] armors;
     [SerializeField] public Quest[] quests;
+    [SerializeField] public Skill[] skils;
+    [SerializeField] public Sprite[] fases;
 }

@@ -29,7 +29,7 @@ MonoBehaviour:
   - {x: -101, y: 3}
   - {x: -101, y: 3}
   - {x: -4, y: 3}
-  - {x: 24.1, y: 3}
+  - {x: -4, y: 3}
   pointReturn:
   - {x: 0, y: 0}
   - {x: 37.9, y: 3}
@@ -40,7 +40,7 @@ MonoBehaviour:
   - {x: -101, y: 3}
   - {x: -101, y: 3}
   - {x: -4, y: 3}
-  - {x: 24.1, y: 3}
+  - {x: -4, y: 3}
   startDialog: {fileID: 11400000, guid: 6b3a7bf6e18fb6d45b3d3ce487884864, type: 2}
   doingtDialog: {fileID: 11400000, guid: 461ea4e9b616d36498afa8219763bbdf, type: 2}
   item: {fileID: 0}

@@ -4,6 +4,8 @@ using UnityEngine;
 public class EnemyMutant : MonoBehaviour
 {
     [SerializeField] public bool IsDided = false;
+    [SerializeField] public Object didePrefb;
+    [SerializeField] private int xp;
     [Header("Move")]
     [SerializeField] private MoveedObject mObject;
     [SerializeField] private BoxCollider2D mCollider;
@@ -25,6 +27,7 @@ public class EnemyMutant : MonoBehaviour
 
     private float _timeBtwShot = 1f;
     public bool _isShoot = false;
+    private bool ex = false;
 
     private void Awake()
     {
@@ -77,6 +80,49 @@ public class EnemyMutant : MonoBehaviour
             _vector = Vector3.zero;
             IsDided = true;
             transform.eulerAngles = new Vector3(0, 0, -180);
+
+            if (!ex)
+            {
+                GameObject popup = Instantiate(didePrefb, transform.position, Quaternion.identity) as GameObject;
+                ExperiencePopup exPop = popup.GetComponent<ExperiencePopup>();
+                popup.transform.SetParent(null);
+
+                foreach (int i in StaticVal.idSkills)
+                {
+                    if (i != -1)
+                    {
+                        foreach (Skill s in StaticVal.dataBase.skils)
+                        {
+                            if (s.Modifier == TypeModifier.Lerning)
+                            {
+                                if (s.LevelModifier == 1)
+                                {
+                                    exPop.str = "+" + (xp + 2) + " Опыта";
+                                    StaticVal.notSelectedXP += (xp + 2);
+                                }
+                                else if (s.LevelModifier == 2)
+                                {
+                                    exPop.str = "+" + (xp + 4) + " Опыта";
+                                    StaticVal.notSelectedXP += (xp + 4);
+                                }
+                                else if (s.LevelModifier == 3)
+                                {
+                                    exPop.str = "+" + (xp + 6) + " Опыта";
+                                    StaticVal.notSelectedXP += (xp + 6);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if (exPop.str == null || exPop.str == "")
+                {
+                    exPop.str = "+" + xp + " Опыта";
+                    StaticVal.notSelectedXP += xp;
+                }
+
+                ex = true;
+            }
         }
 
         if (IsDided && !FindNullItem())

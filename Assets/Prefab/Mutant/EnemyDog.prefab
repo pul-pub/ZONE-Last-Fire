@@ -74,6 +74,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDided: 0
+  didePrefb: {fileID: 7467280136975221421, guid: 07820064057e4634c870c922fa152843, type: 3}
+  xp: 1
   mObject: {fileID: 11400000, guid: 0b68b1abb8f5b9e4ba6cd80fd1a9c4c0, type: 2}
   mCollider: {fileID: 8069283002848777168}
   _anim: {fileID: 2259050194186099459}

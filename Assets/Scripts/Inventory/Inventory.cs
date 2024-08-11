@@ -127,32 +127,6 @@ public class Inventory : MonoBehaviour
             }
             Loaded.Invoke();
         }
-        else
-        {
-            AddItem(items, 0, _data.items[3], 15, 70);
-            AddItem(items, 1, _data.items[30], 1, 50);
-            /*
-            int num = 0;
-            foreach (Item ii in _data.items)
-            {
-                if (ii.type == TypeItem.Ammo)
-                {
-                    AddItem(items, num, ii, 150, 50);
-                    num += 1;
-                }
-                if (ii.type == TypeItem.Weapon)
-                {
-                    AddItem(items, num, ii, 1, 50);
-                    num += 1;
-                }
-                if (ii.type == TypeItem.Cothl)
-                {
-                    AddItem(items, num, ii, 1, 50);
-                    num += 1;
-                }
-            }
-            */
-        }
         UpdateInventory();
     }
 

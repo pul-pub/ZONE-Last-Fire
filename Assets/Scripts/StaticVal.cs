@@ -10,23 +10,38 @@ public static class StaticVal
     public static string trecker_id_android = null;
 #endif
 
+    public static DataBase dataBase;
+
     public static string nameSave = null;
     public static bool onYN = false;
     public static int money = 2000;
     public static int timer = 720;
 
-    //---------------Õ¿—“–Œ… »-----------------------
+    public static string idSesion;
+
+    #region SETTINGS
     public static float alfaUi = 0.25f;
     public static float volSound = 1.0f;
     public static bool vibroMode = false;
     public static bool promptMode = true;
     public static int FPSMode = 60;
-    //---------------Õ¿—“–Œ… »-----------------------
+    #endregion
 
+    #region TIMES
     public static int[] time = new int[2]{ 8, 0 };
     public static bool idRain = false;
     public static float light = 0.59f;
+    #endregion
 
+    #region CHARECTER
+    public static string name = null;
+    public static int idFace = 0;
+    public static int notSelectedXP = 0;
+    public static int[] characteristics = new int[3]{ -1, -1, -1 };
+    public static int[] idSkills = new int[10]{ -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 };
+    #endregion
+
+    #region PEOPLS
     public static bool[,] peopls = new bool[8, 8] { { true, true, true, true, true, true, true, true },
                                                     { true, false, true, true, false, true, true, true },
                                                     { false, false, false, true, false, true, true, true },
@@ -44,4 +59,5 @@ public static class StaticVal
                                                     { true, true, true, true, true, true, true, true },
                                                     { true, true, true, true, true, true, true, true },
                                                     { true, true, true, true, true, true, true, true } };
+    #endregion
 }

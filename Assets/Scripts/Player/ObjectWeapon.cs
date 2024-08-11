@@ -267,13 +267,17 @@ public class ObjectWeapon : MonoBehaviour
         if (player._Object.armor != null)
         {
             body.sprite = player._Object.armor.spriteBody;
-            head.sprite = player._Object.armor.spriteHead;
             rig.sprite = player._Object.armor.spriteRig;
+
+            if (player._Object.armor.headIsMask)
+                head.sprite = player._Object.armor.spriteHead;
+            else
+                head.sprite = player.data.fases[StaticVal.idFace];
         }
         else
         {
             body.sprite = player.data.armors[0].spriteBody;
-            head.sprite = player.data.armors[0].spriteHead;
+            head.sprite = player.data.fases[StaticVal.idFace];
             rig.sprite = player.data.armors[0].spriteRig;
         }
     }

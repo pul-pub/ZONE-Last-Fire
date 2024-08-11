@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c3afdead1a31b4f87eb7267de400df, type: 3}
+  m_Name: Chemistry
+  m_EditorClassIdentifier: 
+  Id: 1
+  Name: "\u0425\u0438\u043C\u0438\u044F"
+  Modifier: 2
+  LevelModifier: 2
+  CountXP: 16
+  img: {fileID: 1551663459, guid: 48ffd4b4e524b684fb4b4263df834605, type: 3}
+  afterSkill: {fileID: 11400000, guid: 9d094fab80f6e234fb43aedbb1191635, type: 2}
+  postSkill_1: {fileID: 11400000, guid: 03e826efe46d12d4888bfc3c05f5dd43, type: 2}
+  postSkill_2: {fileID: 0}

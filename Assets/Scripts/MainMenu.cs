@@ -1,6 +1,5 @@
 using Mycom.Tracker.Unity;
 using RuStore.AppUpdate;
-using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -27,27 +26,23 @@ public class MainMenu : MonoBehaviour
             MyTracker.Init(StaticVal.trecker_id_android);
 
         RuStoreAppUpdateManager.Instance.Init();
-        RuStoreAppUpdateManager.Instance.GetAppUpdateInfo(onFailure: (error) => { }, onSuccess: (info) => { infoUpdate = info; });
-        if (infoUpdate != null)
-        {
-            if (infoUpdate.availableVersionCode >= 2)
-            {
-                RuStoreAppUpdateManager.Instance.StartUpdateFlow(
-                    UpdateType.FLEXIBLE, 
-                    onFailure: (error) => { },
-                    onSuccess: (resultCode) => { });
-            }
-        }
+        RuStoreAppUpdateManager.Instance.GetAppUpdateInfo(
+            onFailure: (error) => { },
+            onSuccess: (info) => { 
+                if (info.availableVersionCode >= 2)
+                {
+                    RuStoreAppUpdateManager.Instance.StartUpdateFlow(
+                        UpdateType.FLEXIBLE, 
+                        onFailure: (error) => { },
+                        onSuccess: (resultCode) => { });
+                }
+            });
 #else
         ObjectSave save = null;
 #endif
 
         if (save != null)
         {
-            if (save.isSave)
-            {
-                objButton.SetActive(true);
-            }
 
             sliderHDU.value = save.alfaUi;
             sliderMusic.value = save.volSound;

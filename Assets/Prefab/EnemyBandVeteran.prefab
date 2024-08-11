@@ -621,8 +621,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsEnemyForPlayer: 1
   IsDided: 0
-  IsDestroyOnUnload: 0
+  IsMoveedEnemy: 1
   Name: 
+  didePrefb: {fileID: 7467280136975221421, guid: 07820064057e4634c870c922fa152843, type: 3}
+  xp: 3
   mObject: {fileID: 11400000, guid: fb08615de10c9414ab8cc330a050a127, type: 2}
   mCollider: {fileID: 6741284636836743886}
   _anim: {fileID: 5426401494423270757}
