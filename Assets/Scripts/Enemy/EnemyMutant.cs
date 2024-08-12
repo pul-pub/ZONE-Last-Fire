@@ -35,6 +35,8 @@ public class EnemyMutant : MonoBehaviour
 
         _Object = Clone(mObject, _rb, transform, null);
 
+        sizeCheckMove -= Modification(TypeModifier.Stelth);
+
         Bag.Add(AddItem(toBag[0], 1, 75));
     }
 
@@ -96,30 +98,27 @@ public class EnemyMutant : MonoBehaviour
                             if (s.Modifier == TypeModifier.Lerning)
                             {
                                 if (s.LevelModifier == 1)
-                                {
                                     exPop.str = "+" + (xp + 2) + " Опыта";
-                                    StaticVal.notSelectedXP += (xp + 2);
-                                }
                                 else if (s.LevelModifier == 2)
-                                {
                                     exPop.str = "+" + (xp + 4) + " Опыта";
-                                    StaticVal.notSelectedXP += (xp + 4);
-                                }
                                 else if (s.LevelModifier == 3)
-                                {
                                     exPop.str = "+" + (xp + 6) + " Опыта";
-                                    StaticVal.notSelectedXP += (xp + 6);
-                                }
                             }
                         }
                     }
                 }
 
                 if (exPop.str == null || exPop.str == "")
-                {
                     exPop.str = "+" + xp + " Опыта";
+
+                if (exPop.str == "+" + xp + " Опыта")
                     StaticVal.notSelectedXP += xp;
-                }
+                else if (exPop.str == "+" + (xp + 2) + " Опыта")
+                    StaticVal.notSelectedXP += (xp + 2);
+                else if (exPop.str == "+" + (xp + 4) + " Опыта")
+                    StaticVal.notSelectedXP += (xp + 4);
+                else if (exPop.str == "+" + (xp + 6) + " Опыта")
+                    StaticVal.notSelectedXP += (xp + 6);
 
                 ex = true;
             }
@@ -211,5 +210,18 @@ public class EnemyMutant : MonoBehaviour
         }
 
         return ii;
+    }
+
+    private float Modification(TypeModifier _typeMod)
+    {
+        float level = 0;
+
+        foreach (int i in StaticVal.idSkills)
+            if (i != -1)
+                foreach (Skill s in StaticVal.dataBase.skils)
+                    if (s.Modifier == _typeMod)
+                        level = s.LevelModifier;
+
+        return level;
     }
 }

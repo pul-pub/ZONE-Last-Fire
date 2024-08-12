@@ -31,6 +31,7 @@ public class ObjectSave
     public bool[] peopls1 = new bool[8] { true, false, true, true, false, true, true, true };
     public bool[] peopls2 = new bool[8] { false, false, false, true, false, true, true, true };
     public bool[] peopls3 = new bool[8] { false, false, false, false, false, false, true, true };
+    public bool[] peopls4 = new bool[8] { false, false, false, false, false, false, true, true };
     #endregion
 
     #region TIMES
@@ -58,8 +59,6 @@ public class ObjectSave
     public float armor;
     public string name;
 
-    public int currentSkill;
-    public int currentXP;
     public int notSelectedXP;
 
     public int idFace;

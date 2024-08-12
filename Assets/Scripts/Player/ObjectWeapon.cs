@@ -174,7 +174,8 @@ public class ObjectWeapon : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().buildIndex > 2 &&
             SceneManager.GetActiveScene().buildIndex != 6 &&
-            SceneManager.GetActiveScene().buildIndex != 8)
+            SceneManager.GetActiveScene().buildIndex != 8 &&
+            SceneManager.GetActiveScene().buildIndex != 9)
         {
             if (_flagGun == true && _guns[_numGun] != null && _guns[_numGun].currentAmmos >= 1 && !_isReload && _timeBtwShot <= 0f)
             {
@@ -245,6 +246,7 @@ public class ObjectWeapon : MonoBehaviour
         if ((SceneManager.GetActiveScene().buildIndex <= 2 ||
             SceneManager.GetActiveScene().buildIndex == 6 ||
             SceneManager.GetActiveScene().buildIndex == 8 ||
+            SceneManager.GetActiveScene().buildIndex == 9 ||
             _guns[_numGun].currentAmmos <= 0) && _flagGun)
         {
             _audioSource.clip = _guns[_numGun].soundSpusk;
@@ -253,6 +255,7 @@ public class ObjectWeapon : MonoBehaviour
 
         if ((SceneManager.GetActiveScene().buildIndex <= 2 ||
             SceneManager.GetActiveScene().buildIndex == 6 ||
+            SceneManager.GetActiveScene().buildIndex == 9 ||
             SceneManager.GetActiveScene().buildIndex == 8)
             && _flagGun)
         {

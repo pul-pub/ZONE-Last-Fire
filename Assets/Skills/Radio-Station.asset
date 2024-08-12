@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 3
   Name: "\u0421\u0442\u0435\u043B\u0441(+1)"
-  Modifier: 1
-  LevelModifier: 1
+  Modifier: 2
+  LevelModifier: 3
   CountXP: 32
   img: {fileID: -888078621968047055, guid: 3aaa605c042a1f34095fc71f9f08191e, type: 3}
-  afterSkill: {fileID: 11400000, guid: 86d61e49d0e85074ea8e8424ad8e6734, type: 2}
-  postSkill_1: {fileID: 11400000, guid: 03e826efe46d12d4888bfc3c05f5dd43, type: 2}
+  afterSkill: {fileID: 11400000}
+  postSkill_1: {fileID: 0}
   postSkill_2: {fileID: 0}

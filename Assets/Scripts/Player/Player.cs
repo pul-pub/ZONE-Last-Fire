@@ -2,8 +2,6 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
-using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class Player : MonoBehaviour
 {
@@ -59,6 +57,8 @@ public class Player : MonoBehaviour
         _weapon = GetComponentInChildren<ObjectWeapon>();
         det = GetComponent<Detector>();
         _Object = Clone(mObject, _rb, transform, mCollider);
+        _Object.ForceJamp += (StaticVal.characteristics[1]/2);
+        _Object.Speed += (StaticVal.characteristics[1]/4);
         controller = inventory.gameObject.GetComponent<CamController>();
 
         if (StaticVal.nameSave != null)
@@ -202,6 +202,8 @@ public class Player : MonoBehaviour
         int[] listEndingQests = new int[_playerInterface.EndingQuests.Count];
         bool[,] peoples = new bool[8, 8];
 
+        save.name = StaticVal.name;
+
         if (_weapon._guns[0] != null)
             save.currentAmmos[0] = _weapon._guns[0].currentAmmos;
         if (_weapon._guns[1] != null)
@@ -213,6 +215,8 @@ public class Player : MonoBehaviour
             save.peopls2[i] = StaticVal.peopls[2, i];
         for (int i = 0; i < 8; i++)
             save.peopls3[i] = StaticVal.peopls[3, i];
+        for (int i = 0; i < 8; i++)
+            save.peopls4[i] = StaticVal.peopls[4, i];
 
         for (int i = 0; i < 29; i++) 
         {
@@ -260,16 +264,18 @@ public class Player : MonoBehaviour
         save.health = _Object.Health;
         save.armor = _Object.Arm;
         save.money = StaticVal.money;
-        if (isSave)
-        {
-            save.indexScene = SceneManager.GetActiveScene().buildIndex;
-        }
+        save.indexScene = SceneManager.GetActiveScene().buildIndex;
 
         save.alfaUi = StaticVal.alfaUi;
         save.volSound = StaticVal.volSound;
         save.vibroMode = StaticVal.vibroMode;
         save.promptMode = StaticVal.promptMode;
         save.FPSMode = StaticVal.FPSMode;
+
+        save.idFace = StaticVal.idFace;
+        save.idSkills = StaticVal.idSkills;
+        save.characteristics = StaticVal.characteristics;
+        save.notSelectedXP = StaticVal.notSelectedXP;
 
         string json = JsonUtility.ToJson(save, true);
         File.WriteAllText(Application.persistentDataPath + _name, json);

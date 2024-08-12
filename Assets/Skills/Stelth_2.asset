@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70c3afdead1a31b4f87eb7267de400df, type: 3}
-  m_Name: Mine
+  m_Name: Stelth_2
   m_EditorClassIdentifier: 
   Id: 5
-  Name: "\u0421\u0442\u0435\u043B\u0441(+1)"
+  Name: "\u0421\u0442\u0435\u043B\u0441(+2)"
   Modifier: 1
-  LevelModifier: 1
+  LevelModifier: 2
   CountXP: 24
   img: {fileID: 1825024952319017989, guid: 3aaa605c042a1f34095fc71f9f08191e, type: 3}
   afterSkill: {fileID: 11400000, guid: 366c4935cc1f12241970f6722763774b, type: 2}

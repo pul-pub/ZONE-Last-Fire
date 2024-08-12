@@ -8860,7 +8860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 452292382190522558, guid: b43eaf85d50710c4d889d435d8fa1f5a, type: 3}
       propertyPath: m_Size.x
-      value: 0.2635126
+      value: 0.43889046
       objectReference: {fileID: 0}
     - target: {fileID: 452292382190522558, guid: b43eaf85d50710c4d889d435d8fa1f5a, type: 3}
       propertyPath: m_Size.y
@@ -8868,7 +8868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 452292382190522558, guid: b43eaf85d50710c4d889d435d8fa1f5a, type: 3}
       propertyPath: m_Offset.x
-      value: 0.30270147
+      value: 0.21501255
       objectReference: {fileID: 0}
     - target: {fileID: 452292382190522558, guid: b43eaf85d50710c4d889d435d8fa1f5a, type: 3}
       propertyPath: m_Offset.y
@@ -8896,7 +8896,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5789138551347846346, guid: b43eaf85d50710c4d889d435d8fa1f5a, type: 3}
       propertyPath: m_Name
-      value: DOOR_0 (3)
+      value: Shelter
+      objectReference: {fileID: 0}
+    - target: {fileID: 5789138551347846346, guid: b43eaf85d50710c4d889d435d8fa1f5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9112369200848440650, guid: b43eaf85d50710c4d889d435d8fa1f5a, type: 3}
       propertyPath: m_Enabled

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -23,6 +24,7 @@ public class Enemy : MonoBehaviour
     [Header("Weapon")]
     [SerializeField] private GameObject weapon;
     [SerializeField] private Gun gun;
+    [SerializeField] private float modificatedSpeedShoot = 0.75f;
     [SerializeField] private SpriteRenderer spriteWeapon;
     [SerializeField] private GameObject store;
     [SerializeField] private GameObject storeReload;
@@ -111,7 +113,9 @@ public class Enemy : MonoBehaviour
             head.sprite = armor.spriteHead;
         rig.sprite = armor.spriteRig;
         _gun = gun.Clone();
-        _gun.startTimeBtwShot += 0.75f;
+        _gun.startTimeBtwShot += modificatedSpeedShoot;
+
+        sizeCheckMove -= Modification(TypeModifier.Stelth);
 
         Reload();
     }
@@ -194,30 +198,27 @@ public class Enemy : MonoBehaviour
                             if (s.Modifier == TypeModifier.Lerning)
                             {
                                 if (s.LevelModifier == 1)
-                                {
                                     exPop.str = "+" + (xp + 2) + " Опыта"; 
-                                    StaticVal.notSelectedXP += (xp + 2);
-                                }
                                 else if (s.LevelModifier == 2)
-                                {
                                     exPop.str = "+" + (xp + 4) + " Опыта";
-                                    StaticVal.notSelectedXP += (xp + 4);
-                                }
                                 else if (s.LevelModifier == 3)
-                                {
                                     exPop.str = "+" + (xp + 6) + " Опыта";
-                                    StaticVal.notSelectedXP += (xp + 6);
-                                }
                             }
                         }
                     }
                 }
 
                 if (exPop.str == null || exPop.str == "")
-                {
                     exPop.str = "+" + xp + " Опыта";
+
+                if (exPop.str == "+" + xp + " Опыта")
                     StaticVal.notSelectedXP += xp;
-                }
+                else if (exPop.str == "+" + (xp + 2) + " Опыта")
+                    StaticVal.notSelectedXP += (xp + 2);
+                else if (exPop.str == "+" + (xp + 4) + " Опыта")
+                    StaticVal.notSelectedXP += (xp + 4);
+                else if (exPop.str == "+" + (xp + 6) + " Опыта")
+                    StaticVal.notSelectedXP += (xp + 6);
 
                 ex = true;
             }
@@ -399,5 +400,18 @@ public class Enemy : MonoBehaviour
         }
 
         return ii;
+    }
+
+    private float Modification(TypeModifier _typeMod)
+    {
+        float level = 0;
+
+        foreach (int i in StaticVal.idSkills)
+            if (i != -1)
+                foreach (Skill s in StaticVal.dataBase.skils)
+                    if (s.Modifier == _typeMod)
+                        level = s.LevelModifier;
+
+        return level;
     }
 }

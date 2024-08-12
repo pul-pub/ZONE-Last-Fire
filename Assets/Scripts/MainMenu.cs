@@ -22,21 +22,7 @@ public class MainMenu : MonoBehaviour
 #if !UNITY_EDITOR
         string json = File.ReadAllText(Application.persistentDataPath + "/save.json");
         ObjectSave save = JsonUtility.FromJson<ObjectSave>(json);
-        if (StaticVal.trecker_id_android != null) 
-            MyTracker.Init(StaticVal.trecker_id_android);
-
-        RuStoreAppUpdateManager.Instance.Init();
-        RuStoreAppUpdateManager.Instance.GetAppUpdateInfo(
-            onFailure: (error) => { },
-            onSuccess: (info) => { 
-                if (info.availableVersionCode >= 2)
-                {
-                    RuStoreAppUpdateManager.Instance.StartUpdateFlow(
-                        UpdateType.FLEXIBLE, 
-                        onFailure: (error) => { },
-                        onSuccess: (resultCode) => { });
-                }
-            });
+        
 #else
         ObjectSave save = null;
 #endif

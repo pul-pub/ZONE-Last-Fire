@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Security.Cryptography;
 using TMPro;
+using RuStore.AppUpdate;
 
 
 public class PlayConstructor : MonoBehaviour
@@ -33,7 +34,7 @@ public class PlayConstructor : MonoBehaviour
     private int idGun = -1;
     private int idColth = -1;
 
-    private float score = 10;
+    private float score = 7;
 
     private void Awake()
     {
@@ -166,6 +167,16 @@ public class PlayConstructor : MonoBehaviour
 
     private void Contline(string id)
     {
+        if (GetComponent<AppUpdate>().GetAppUpdateInfo().updateAvailability == AppUpdateInfo.UpdateAvailability.UPDATE_AVAILABLE)
+        {
+            GetComponent<AppUpdate>().StartFlexibleUpdate();
+            return;
+        }
+        else if (GetComponent<AppUpdate>().GetAppUpdateInfo().updateAvailability == AppUpdateInfo.UpdateAvailability.DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS)
+        {
+            return;
+        }
+        
         StaticVal.idSesion = id;
         StaticVal.nameSave = "/" + StaticVal.idSesion + ".json";
         string json = File.ReadAllText(Application.persistentDataPath + StaticVal.nameSave);
@@ -177,6 +188,8 @@ public class PlayConstructor : MonoBehaviour
             StaticVal.peopls[2, i] = save.peopls2[i];
         for (int i = 0; i < 8; i++)
             StaticVal.peopls[3, i] = save.peopls3[i];
+        for (int i = 0; i < 8; i++)
+            StaticVal.peopls[4, i] = save.peopls4[i];
         StaticVal.money = save.money;
         StaticVal.time = save.time;
         StaticVal.idRain = save.isRain;
@@ -186,6 +199,7 @@ public class PlayConstructor : MonoBehaviour
         StaticVal.idSkills = save.idSkills;
         StaticVal.characteristics = save.characteristics;
         StaticVal.name = save.name;
+        StaticVal.notSelectedXP = save.notSelectedXP;
 
         SceneManager.LoadScene(save.indexScene, LoadSceneMode.Single);
     }
@@ -215,6 +229,16 @@ public class PlayConstructor : MonoBehaviour
 
     public void CreateCharacter()
     {
+        if (GetComponent<AppUpdate>().GetAppUpdateInfo().updateAvailability == AppUpdateInfo.UpdateAvailability.UPDATE_AVAILABLE)
+        {
+            GetComponent<AppUpdate>().StartFlexibleUpdate();
+            return;
+        }
+        else if (GetComponent<AppUpdate>().GetAppUpdateInfo().updateAvailability == AppUpdateInfo.UpdateAvailability.DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS)
+        {
+            return;
+        }
+
         StaticVal.idSesion = GenerateUniqueId();
         StaticVal.nameSave = "/" + StaticVal.idSesion + ".json";
 
@@ -241,6 +265,8 @@ public class PlayConstructor : MonoBehaviour
             save.peopls2[i] = StaticVal.peoplsStart[2, i];
         for (int i = 0; i < 8; i++)
             save.peopls3[i] = StaticVal.peoplsStart[3, i];
+        for (int i = 0; i < 8; i++)
+            save.peopls4[i] = StaticVal.peoplsStart[4, i];
 
         for (int i = 0; i < 29; i++)
         {

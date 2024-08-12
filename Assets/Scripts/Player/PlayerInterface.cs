@@ -217,7 +217,7 @@ public class PlayerInterface : MonoBehaviour
 
     public void SaveProgress()
     {
-        player.Save(player.transform.position, forPosSky.localPosition, StaticVal.light, true, "/save.json");
+        player.Save(player.transform.position, forPosSky.localPosition, StaticVal.light, true, "/" + StaticVal.idSesion + ".json");
         StartCoroutine(SavesAnimation());
     }
 

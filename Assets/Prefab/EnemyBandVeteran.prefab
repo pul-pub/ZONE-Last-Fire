@@ -637,6 +637,7 @@ MonoBehaviour:
   sizeCheckShoot: 6.5
   weapon: {fileID: 644275450138165754}
   gun: {fileID: 11400000, guid: 44a38d64269b9b744b1f05732d8e74d2, type: 2}
+  modificatedSpeedShoot: 0.6
   spriteWeapon: {fileID: 3750581492182157524}
   store: {fileID: 95495976182920407}
   storeReload: {fileID: 4157859906334879373}
