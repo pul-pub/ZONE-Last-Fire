@@ -15531,6 +15531,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3da3662a14c70cc40a961d061fd00ad5, type: 2}
   - {fileID: 11400000, guid: b862e872b1cf95a46a401a0fed7ca32c, type: 2}
   - {fileID: 11400000, guid: f0319d6c3c8a98a4e902e6fa455a3f7e, type: 2}
+  - {fileID: 11400000, guid: be2117f6d054b4d4ea8682295b62e3d3, type: 2}
+  - {fileID: 11400000, guid: b0501163ee95c3348b360a52e8a3553b, type: 2}
+  - {fileID: 11400000, guid: c7833573cac9b374e8976a4662c9ff05, type: 2}
+  - {fileID: 11400000, guid: 86172b49161e72b4a9b18e3ca19fb770, type: 2}
   guns:
   - {fileID: 11400000, guid: 55b2dd3dc9540694dbf0aebfbdbe8c3d, type: 2}
   - {fileID: 11400000, guid: 5713cb9ef65464147b4cd62a284e156d, type: 2}
@@ -15563,6 +15567,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 44bcda356a9481e4f96a153fda850706, type: 2}
   - {fileID: 11400000, guid: 2dbc76cb28806db42aff7ffffc2bc47b, type: 2}
   - {fileID: 11400000, guid: d2b1060706c8bdc4fa1ce8895329ebef, type: 2}
+  - {fileID: 11400000, guid: a3dd940ee818ec94fbbb47b0d1e31a5d, type: 2}
+  - {fileID: 11400000, guid: 2b9516251645ed14e98090ff1102c89e, type: 2}
+  - {fileID: 11400000, guid: beeddccaf2980e641b1bdda77c790bbd, type: 2}
+  - {fileID: 11400000, guid: c4a1ecc3a9e5482448fbea5feb2d14c7, type: 2}
   skils:
   - {fileID: 11400000, guid: 9d094fab80f6e234fb43aedbb1191635, type: 2}
   - {fileID: 11400000, guid: 86d61e49d0e85074ea8e8424ad8e6734, type: 2}
@@ -20026,7 +20034,7 @@ GameObject:
   - component: {fileID: 8308368174585184692}
   - component: {fileID: 8783136445856160011}
   - component: {fileID: 7267021545274002073}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24812,9 +24820,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 2119330485
-  m_SortingLayer: 0
-  m_SortingOrder: 50
+  m_SortingLayerID: 693764105
+  m_SortingLayer: 5
+  m_SortingOrder: 80
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0

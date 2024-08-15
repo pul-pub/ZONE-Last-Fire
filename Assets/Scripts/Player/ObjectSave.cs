@@ -32,6 +32,8 @@ public class ObjectSave
     public bool[] peopls2 = new bool[8] { false, false, false, true, false, true, true, true };
     public bool[] peopls3 = new bool[8] { false, false, false, false, false, false, true, true };
     public bool[] peopls4 = new bool[8] { false, false, false, false, false, false, true, true };
+    public bool[] peopls10 = new bool[8] { false, false, false, false, false, false, true, true };
+    public bool[] peopls11 = new bool[8] { false, false, false, false, false, false, true, true };
     #endregion
 
     #region TIMES

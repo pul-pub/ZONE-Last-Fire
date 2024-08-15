@@ -42,19 +42,27 @@ public static class StaticVal
     #endregion
 
     #region PEOPLS
-    public static bool[,] peopls = new bool[8, 8] { { true, true, true, true, true, true, true, true },
-                                                    { true, false, true, true, false, true, true, true },
+    public static bool[,] peopls = new bool[12, 8] { { true, true, true, true, true, true, true, true },
+                                                    { true, false, true, true, false, true, false, true },
                                                     { false, false, false, true, false, true, true, true },
                                                     { false, false, false, false, false, false, true, true },
+                                                    { false, true, true, true, true, true, true, true },
+                                                    { true, true, true, true, true, true, true, true },
+                                                    { true, true, true, true, true, true, true, true },
+                                                    { true, true, true, true, true, true, true, true },
                                                     { true, true, true, true, true, true, true, true },
                                                     { true, true, true, true, true, true, true, true },
                                                     { true, true, true, true, true, true, true, true },
                                                     { true, true, true, true, true, true, true, true } };
 
-    public static bool[,] peoplsStart = new bool[8, 8] { { true, true, true, true, true, true, true, true },
-                                                    { true, false, true, true, false, true, true, true },
+    public static bool[,] peoplsStart = new bool[12, 8] { { true, true, true, true, true, true, true, true },
+                                                    { true, false, true, true, false, true, false, true },
                                                     { false, false, false, true, false, true, true, true },
                                                     { false, false, false, false, false, false, true, true },
+                                                    { false, true, true, true, true, true, true, true },
+                                                    { true, true, true, true, true, true, true, true },
+                                                    { true, true, true, true, true, true, true, true },
+                                                    { true, true, true, true, true, true, true, true },
                                                     { true, true, true, true, true, true, true, true },
                                                     { true, true, true, true, true, true, true, true },
                                                     { true, true, true, true, true, true, true, true },

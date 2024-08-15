@@ -194,6 +194,12 @@ public class Player : MonoBehaviour
     {
         ObjectSave save = new ObjectSave();
 
+        if (isSave)
+        {
+            string json2 = File.ReadAllText(Application.persistentDataPath + _name);
+            save = JsonUtility.FromJson<ObjectSave>(json2);
+        }
+
         int[] idItem = new int[29];
         int[] coutItem = new int[29];
         int[] condItem = new int[29];
@@ -217,6 +223,10 @@ public class Player : MonoBehaviour
             save.peopls3[i] = StaticVal.peopls[3, i];
         for (int i = 0; i < 8; i++)
             save.peopls4[i] = StaticVal.peopls[4, i];
+        for (int i = 0; i < 8; i++)
+            save.peopls10[i] = StaticVal.peopls[10, i];
+        for (int i = 0; i < 8; i++)
+            save.peopls11[i] = StaticVal.peopls[11, i];
 
         for (int i = 0; i < 29; i++) 
         {

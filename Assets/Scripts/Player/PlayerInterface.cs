@@ -112,6 +112,8 @@ public class PlayerInterface : MonoBehaviour
                 {
                     if (quest.id == i)
                         Quests.Add(quest);
+                    if (save.name == "Сохранение до v.1.1" && quest.id == 50 && !CheckEndQuest(50, save.idEndingQuests))
+                        Quests.Add(quest);
                 }
             }
             foreach (int i in save.idEndingQuests)
@@ -120,11 +122,15 @@ public class PlayerInterface : MonoBehaviour
                 {
                     if (quest.id == i)
                         EndingQuests.Add(quest);
+                    if (save.name == "Сохранение до v.1.1" && quest.id == 50 && !CheckEndQuest(50, save.idEndingQuests))
+                        EndingQuests.Add(quest);
                 }
             }
             foreach (Quest quest in data.quests)
             {
                 if (quest.id == save.idActivQuest)
+                    ActivQuest = quest;
+                if (save.name == "Сохранение до v.1.1" && quest.id == 50 && !CheckEndQuest(50, save.idEndingQuests))
                     ActivQuest = quest;
             }
 
@@ -145,7 +151,8 @@ public class PlayerInterface : MonoBehaviour
 
         if (SceneManager.GetActiveScene().buildIndex <= 2 ||
             SceneManager.GetActiveScene().buildIndex == 6 ||
-            SceneManager.GetActiveScene().buildIndex == 8)
+            SceneManager.GetActiveScene().buildIndex == 8 ||
+            SceneManager.GetActiveScene().buildIndex == 9)
             buttonSave.SetActive(true);
         else
             buttonSave.SetActive(false);
@@ -213,6 +220,17 @@ public class PlayerInterface : MonoBehaviour
     {
         Gizmos.color = Color.blue;
         Gizmos.DrawCube(player.transform.position, new Vector3(2, 3f, 0));
+    }
+
+    private bool CheckEndQuest(int id, int[] idEnd)
+    {
+        foreach (int i in idEnd)
+        {
+            if (i == id)
+                return true;
+        }
+
+        return false;
     }
 
     public void SaveProgress()
@@ -429,6 +447,24 @@ public class PlayerInterface : MonoBehaviour
                         }
                     }
                    
+                    if (_enemy.Name == "Аналитик")
+                    {
+                        foreach (Quest qq in EndingQuests)
+                            if (qq.id == 81)
+                                return null;
+                        foreach (Quest qq in Quests)
+                            if (qq.id == 81)
+                                return null;
+                    }
+                    if (_enemy.Name == "Бадья")
+                    {
+                        foreach (Quest qq in EndingQuests)
+                            if (qq.id == 70)
+                                return null;
+                        foreach (Quest qq in Quests)
+                            if (qq.id == 70)
+                                return null;
+                    }
                     if (_enemy.Name == "Volk")
                     {
                         foreach (Quest qq in EndingQuests)
@@ -437,7 +473,7 @@ public class PlayerInterface : MonoBehaviour
                         foreach (Quest qq in Quests)
                             if (qq.id == 1)
                                 return null;
-                    }  
+                    }
                     else if (_enemy.Name == "Баян")
                     {
                         foreach (Quest qq in EndingQuests)
@@ -792,6 +828,20 @@ public class PlayerInterface : MonoBehaviour
                     StaticVal.peopls[1, 5] = false;
                     StaticVal.peopls[4, 4] = true;
                 }
+                if (dialog.name == "Аналитик" && dialog.id == 351)
+                {
+                    StaticVal.peopls[4, 0] = true;
+                }
+                if (dialog.name == "Администратор" && dialog.id == 164)
+                {
+                    StaticVal.peopls[1, 5] = false;
+                    StaticVal.peopls[1, 4] = true;
+                    StaticVal.peopls[3, 4] = true;
+                    StaticVal.peopls[1, 1] = false;
+                    StaticVal.peopls[3, 0] = false;
+                    StaticVal.peopls[3, 1] = false;
+                    StaticVal.peopls[3, 2] = false;
+                }
                 onDialog = false;
                 screenDialog.SetActive(false);
             }
@@ -838,15 +888,14 @@ public class PlayerInterface : MonoBehaviour
                     StaticVal.peopls[3, 2] = false;
                 } 
 
-                if (dialog.name == "Администратор")
+                if (dialog.name == "Администратор" && dialog.id == 300)
                 {
-                    StaticVal.peopls[1, 5] = false;
-                    StaticVal.peopls[1, 4] = true;
-                    StaticVal.peopls[3, 4] = true;
-                    StaticVal.peopls[1, 1] = false;
-                    StaticVal.peopls[3, 0] = false;
-                    StaticVal.peopls[3, 1] = false;
-                    StaticVal.peopls[3, 2] = false;
+                    StaticVal.peopls[1, 6] = true;
+                }
+
+                if (dialog.name == "Аналитик" && dialog.id == 361)
+                {
+                    StaticVal.peopls[4, 0] = false;
                 }
             }
         }

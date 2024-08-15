@@ -6,6 +6,7 @@ public class EnemyMutant : MonoBehaviour
     [SerializeField] public bool IsDided = false;
     [SerializeField] public Object didePrefb;
     [SerializeField] private int xp;
+    [SerializeField] private bool isAddingXp = true;
     [Header("Move")]
     [SerializeField] private MoveedObject mObject;
     [SerializeField] private BoxCollider2D mCollider;
@@ -83,7 +84,7 @@ public class EnemyMutant : MonoBehaviour
             IsDided = true;
             transform.eulerAngles = new Vector3(0, 0, -180);
 
-            if (!ex)
+            if (!ex && isAddingXp)
             {
                 GameObject popup = Instantiate(didePrefb, transform.position, Quaternion.identity) as GameObject;
                 ExperiencePopup exPop = popup.GetComponent<ExperiencePopup>();
@@ -98,27 +99,27 @@ public class EnemyMutant : MonoBehaviour
                             if (s.Modifier == TypeModifier.Lerning)
                             {
                                 if (s.LevelModifier == 1)
-                                    exPop.str = "+" + (xp + 2) + " Опыта";
+                                    exPop.str = "+" + (xp + ((int)StaticVal.characteristics[2] / 2) + 2) + " Опыта";
                                 else if (s.LevelModifier == 2)
-                                    exPop.str = "+" + (xp + 4) + " Опыта";
+                                    exPop.str = "+" + (xp + ((int)StaticVal.characteristics[2] / 2) + 4) + " Опыта";
                                 else if (s.LevelModifier == 3)
-                                    exPop.str = "+" + (xp + 6) + " Опыта";
+                                    exPop.str = "+" + (xp + ((int)StaticVal.characteristics[2] / 2) + 6) + " Опыта";
                             }
                         }
                     }
                 }
 
                 if (exPop.str == null || exPop.str == "")
-                    exPop.str = "+" + xp + " Опыта";
+                    exPop.str = "+" + (xp + ((int)StaticVal.characteristics[2] / 2)) + " Опыта";
 
-                if (exPop.str == "+" + xp + " Опыта")
-                    StaticVal.notSelectedXP += xp;
-                else if (exPop.str == "+" + (xp + 2) + " Опыта")
-                    StaticVal.notSelectedXP += (xp + 2);
-                else if (exPop.str == "+" + (xp + 4) + " Опыта")
-                    StaticVal.notSelectedXP += (xp + 4);
-                else if (exPop.str == "+" + (xp + 6) + " Опыта")
-                    StaticVal.notSelectedXP += (xp + 6);
+                if (exPop.str == "+" + (xp + ((int)StaticVal.characteristics[2] / 2)) + " Опыта")
+                    StaticVal.notSelectedXP += (xp + ((int)StaticVal.characteristics[2] / 2));
+                else if (exPop.str == "+" + (xp + ((int)StaticVal.characteristics[2] / 2) + 2) + " Опыта")
+                    StaticVal.notSelectedXP += (xp + ((int)StaticVal.characteristics[2] / 2) + 2);
+                else if (exPop.str == "+" + (xp + ((int)StaticVal.characteristics[2] / 2) + 4) + " Опыта")
+                    StaticVal.notSelectedXP += (xp + ((int)StaticVal.characteristics[2] / 2) + 4);
+                else if (exPop.str == "+" + (xp + ((int)StaticVal.characteristics[2] / 2) + 6) + " Опыта")
+                    StaticVal.notSelectedXP += (xp + ((int)StaticVal.characteristics[2] / 2) + 6);
 
                 ex = true;
             }
@@ -126,6 +127,8 @@ public class EnemyMutant : MonoBehaviour
 
         if (IsDided && !FindNullItem())
         {
+            if (gameObject.name == "EnemyPsevdoplotKING")
+                StaticVal.peopls[11, 0] = false;
             Destroy(gameObject);
         }
     }

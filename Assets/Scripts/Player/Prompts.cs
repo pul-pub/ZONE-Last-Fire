@@ -59,6 +59,16 @@ public class Prompts : MonoBehaviour
                             textPrompt.text = "Подобрать";
                         }
                     }
+                    else if (col.GetComponents<SkillsTreeObject>().Length > 0)
+                    {
+                        prompt.SetActive(true);
+                        textPrompt.text = "Открыть древо навыков";
+                    }
+                    else if (col.GetComponents<AnomalyDevicesObject>().Length > 0)
+                    {
+                        prompt.SetActive(true);
+                        textPrompt.text = "Установить прибор";
+                    }
                 }
             }
             else

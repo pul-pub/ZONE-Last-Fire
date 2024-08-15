@@ -16,7 +16,7 @@ MonoBehaviour:
   NameTo: "\u0424\u043E\u043A\u0441"
   NameFrom: "\u0411\u0430\u044F\u043D"
   isActiv: 1
-  header: " \u0414\u0440\u0443\u0437\u044C\u044F \u043D\u0430 \u0432\u0435\u0447\u043D\u043E"
+  header: " \u0414\u0440\u0443\u0437\u044C\u044F \u043D\u0430\u0432\u0435\u0447\u043D\u043E"
   title: "\u0417\u0430\u0431\u0440\u0430\u0442\u044C \u041A\u041F\u041A \u0443 \u043B\u0438\u0434\u0435\u0440\u0430
     \u0433\u0440\u0443\u043F\u043F\u044B \"\u0411\u0440\u0430\u0432\u043E\""
   point:
@@ -30,6 +30,8 @@ MonoBehaviour:
   - {x: -101, y: 3}
   - {x: -4, y: 3}
   - {x: -4, y: 3}
+  - {x: -101, y: 3}
+  - {x: -101, y: 3}
   pointReturn:
   - {x: 0, y: 3}
   - {x: 107, y: 3}
@@ -41,6 +43,8 @@ MonoBehaviour:
   - {x: -101, y: 3}
   - {x: -4, y: 3}
   - {x: -4, y: 3}
+  - {x: -101, y: 3}
+  - {x: -101, y: 3}
   startDialog: {fileID: 11400000, guid: 18d9fae59eeb30e4ebf6eaabe2ce25ea, type: 2}
   doingtDialog: {fileID: 11400000, guid: 461ea4e9b616d36498afa8219763bbdf, type: 2}
   item: {fileID: 0}

@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] public string Name;
     [SerializeField] public Object didePrefb;
     [SerializeField] private int xp;
+    [SerializeField] private bool isAddingXp = true;
     [Space]
     [Header("Move")]
     [SerializeField] private MoveedObject mObject;
@@ -107,11 +108,15 @@ public class Enemy : MonoBehaviour
             }
         }
 
-        _Object.armor = armor;
-        body.sprite = armor.spriteBody;
-        if (isAvtomaticalSetHeader) 
-            head.sprite = armor.spriteHead;
-        rig.sprite = armor.spriteRig;
+        if (armor != null)
+        {
+            _Object.armor = armor;
+            body.sprite = armor.spriteBody;
+            if (isAvtomaticalSetHeader)
+                head.sprite = armor.spriteHead;
+            rig.sprite = armor.spriteRig;
+        }
+        
         _gun = gun.Clone();
         _gun.startTimeBtwShot += modificatedSpeedShoot;
 
@@ -183,7 +188,7 @@ public class Enemy : MonoBehaviour
             transform.position = new Vector2(transform.position.x, -0.5f);
             transform.eulerAngles = new Vector3(0, 0, -90);
 
-            if (!ex)
+            if (!ex && isAddingXp)
             {
                 GameObject popup = Instantiate(didePrefb, transform.position, Quaternion.identity) as GameObject;
                 ExperiencePopup exPop = popup.GetComponent<ExperiencePopup>();
@@ -198,27 +203,27 @@ public class Enemy : MonoBehaviour
                             if (s.Modifier == TypeModifier.Lerning)
                             {
                                 if (s.LevelModifier == 1)
-                                    exPop.str = "+" + (xp + 2) + " Опыта"; 
+                                    exPop.str = "+" + (xp + ((int)StaticVal.characteristics[2]/2) + 2) + " Опыта"; 
                                 else if (s.LevelModifier == 2)
-                                    exPop.str = "+" + (xp + 4) + " Опыта";
+                                    exPop.str = "+" + (xp + ((int)StaticVal.characteristics[2] / 2) + 4) + " Опыта";
                                 else if (s.LevelModifier == 3)
-                                    exPop.str = "+" + (xp + 6) + " Опыта";
+                                    exPop.str = "+" + (xp + ((int)StaticVal.characteristics[2] / 2) + 6) + " Опыта";
                             }
                         }
                     }
                 }
 
                 if (exPop.str == null || exPop.str == "")
-                    exPop.str = "+" + xp + " Опыта";
+                    exPop.str = "+" + (xp + ((int)StaticVal.characteristics[2] / 2)) + " Опыта";
 
-                if (exPop.str == "+" + xp + " Опыта")
-                    StaticVal.notSelectedXP += xp;
-                else if (exPop.str == "+" + (xp + 2) + " Опыта")
-                    StaticVal.notSelectedXP += (xp + 2);
-                else if (exPop.str == "+" + (xp + 4) + " Опыта")
-                    StaticVal.notSelectedXP += (xp + 4);
-                else if (exPop.str == "+" + (xp + 6) + " Опыта")
-                    StaticVal.notSelectedXP += (xp + 6);
+                if (exPop.str == "+" + (xp + ((int)StaticVal.characteristics[2] / 2)) + " Опыта")
+                    StaticVal.notSelectedXP += (xp + ((int)StaticVal.characteristics[2] / 2));
+                else if (exPop.str == "+" + (xp + ((int)StaticVal.characteristics[2] / 2) + 2) + " Опыта")
+                    StaticVal.notSelectedXP += (xp + ((int)StaticVal.characteristics[2] / 2) + 2);
+                else if (exPop.str == "+" + (xp + ((int)StaticVal.characteristics[2] / 2) + 4) + " Опыта")
+                    StaticVal.notSelectedXP += (xp + ((int)StaticVal.characteristics[2] / 2) + 4);
+                else if (exPop.str == "+" + (xp + ((int)StaticVal.characteristics[2] / 2) + 6) + " Опыта")
+                    StaticVal.notSelectedXP += (xp + ((int)StaticVal.characteristics[2] / 2) + 6);
 
                 ex = true;
             }
@@ -281,8 +286,11 @@ public class Enemy : MonoBehaviour
         {
             if (Name == "Труп-1")
                 StaticVal.peopls[3, 3] = false;
-            else
-                Destroy(gameObject);
+
+            if (Name == "Диск")
+                StaticVal.peopls[11, 0] = false;
+            
+            Destroy(gameObject);
         }
     }
 

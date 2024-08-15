@@ -50,6 +50,7 @@ public class A_Life : MonoBehaviour
         {
             for (int i = 0; i < objs.Length; i++)
             {
+                Debug.Log(SceneManager.GetActiveScene().buildIndex);
                 if (objs[i].activeSelf != StaticVal.peopls[SceneManager.GetActiveScene().buildIndex, i])
                 {
                     objs[i].SetActive(StaticVal.peopls[SceneManager.GetActiveScene().buildIndex, i]);
